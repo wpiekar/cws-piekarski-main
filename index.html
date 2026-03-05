@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <meta charset="UTF-8">
 <title>CWS Piekarski – Centrum Napraw Samochodowych</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,16 +26,24 @@ gtag('config', 'G-XBYX8MP241');
 <div class="logo">CWS Piekarski</div>
 <nav>
 <ul>
-<li><a href="index.html">Strona główna</a></li>
+<li>
+<a href="index.html" class="home-icon">
+<i class="fas fa-home"></i>
+</a>
+</li>
 <li><a href="naprawy-powypadkowe.html">Naprawy powypadkowe</a></li>
 <li><a href="mechanika.html">Mechanika</a></li>
 <li><a href="skp.html">SKP</a></li>
 <li><a href="holowanie.html">Holowanie 24/7</a></li>
 <li><a href="wynajem.html">Wynajem</a></li>
+
 <li><a href="kontakt.html">Kontakt</a></li>
 </ul>
 </nav>
-<a class="phone-btn" href="tel:+48486247168">48 624 71 68</a>
+<a class="phone-btn" href="tel:+48486247168">
+☎ 48 624 71 68
+</a>
+
 </div>
 </header>
 
@@ -44,29 +53,61 @@ gtag('config', 'G-XBYX8MP241');
 <div class="container">
 
 <div class="hero-tabs">
-<button class="tab active" onclick="switchHero(event, 'wypadek')">Naprawy powypadkowe</button>
-<button class="tab" onclick="switchHero(event, 'mechanika')">Mechanika</button>
-<button class="tab" onclick="switchHero(event, 'skp')">SKP</button>
-<button class="tab" onclick="switchHero(event, 'wynajem')">Wynajem</button>
+
+<button class="tab active" onclick="switchHero(event,'wypadek')">
+<span class="tab-icon">🚗</span>
+Naprawy powypadkowe
+</button>
+
+<button class="tab" onclick="switchHero(event,'mechanika')">
+<span class="tab-icon">🔧</span>
+Mechanika
+</button>
+
+<button class="tab" onclick="switchHero(event,'skp')">
+<span class="tab-icon">✔</span>
+SKP
+</button>
+
+<button class="tab" onclick="switchHero(event,'wynajem')">
+<span class="tab-icon">🚙</span>
+Wynajem
+</button>
+
 </div>
 
+
 <div id="hero-content">
-<h1 id="hero-title">Naprawy powypadkowe i kompleksowa obsługa szkód w Kozienicach</h1>
+
+<h1 id="hero-title">
+Naprawy powypadkowe i kompleksowa obsługa szkód w Kozienicach
+</h1>
+
 <p id="hero-text">
 Pomagamy w formalnościach, współpracujemy z ubezpieczycielami i realizujemy naprawy bezgotówkowe z OC sprawcy.
 </p>
 
-<a id="hero-primary" href="szkoda-komunikacyjna.html" class="btn-primary">
+<div class="hero-cta">
+
+<a id="hero-primary"
+href="szkoda-komunikacyjna.html"
+class="btn-primary">
 Zgłoś szkodę
 </a>
 
-<a id="hero-secondary" href="tel:+48486247168" class="btn-secondary">
+<a id="hero-secondary"
+href="tel:+48486247168"
+class="btn-secondary">
 Zadzwoń
 </a>
 
 </div>
+
+</div>
+
 </div>
 </section>
+
 <!-- GOOGLE REVIEWS PREMIUM -->
 <section class="section google-reviews">
 <div class="container">
@@ -146,7 +187,7 @@ Zadzwoń
 </div>
 </section>
 <!-- DLACZEGO MY - WERSJA GŁÓWNA -->
-<section class="section">
+<section class="section section-dark leader-section">
 <div class="container">
 <h2>Lider napraw samochodowych w regionie od 1972 roku</h2>
 
@@ -230,7 +271,7 @@ function renderBadge() {
 </script>
 
 <!-- USŁUGI -->
-<section class="section section-dark">
+<section class="section section-dark services-section">
 <div class="container">
 <h2>Centrum Napraw Samochodowych</h2>
 
@@ -270,83 +311,50 @@ Auto zastępcze z OC sprawcy oraz wynajem krótkoterminowy.
 
 </div>
 </div>
-</section>
 
-<section class="section">
-<div class="container">
-<h2>Działamy w Kozienicach i całym regionie</h2>
 
-<div class="region">
-<div class="region-text">
-<p>
-CWS Piekarski to centrum napraw samochodowych w Kozienicach. Obsługujemy klientów z całego powiatu kozienickiego oraz okolicznych miejscowości.
-</p>
+<section class="contact-section">
+  <div class="contact-map-bg">
+    <iframe 
+      src="https://www.google.com/maps?q=Brzeźnica+99,+26-900+Kozienice&output=embed"
+      loading="lazy">
+    </iframe>
 
-<p>
-Z naszych usług korzystają klienci m.in. z: Garbatki-Letnisko, Pionek, Głowaczowa, Magnuszewa, Sieciechowa, Grabowa nad Pilicą, Stromca, Jedlni-Letnisko, Ryczywołu oraz wielu okolicznych miejscowości.
-</p>
+    <div class="contact-card">
+      <h2>Kontakt</h2>
 
-<p>
-Realizujemy naprawy powypadkowe, mechanikę pojazdową, badania techniczne oraz wynajem pojazdów dla klientów indywidualnych i firm.
-</p>
-</div>
-</div>
-</div>
-</section>
+      <h3>CWS Piekarski</h3>
 
-<!-- HOLowanie -->
-<section class="cta-dark">
-<div class="container">
-<h2>Pomoc drogowa 24/7</h2>
-<p class="assist">602 616 999</p>
-</div>
+      <p>
+        <strong>Adres:</strong><br>
+        26-900 Kozienice<br>
+        Brzeźnica 99
+      </p>
 
-<section class="section section-dark">
-<div class="container">
-<h2>Kontakt</h2>
+      <p>
+        <strong>Kontakt:</strong><br>
+        48 624 71 68<br>
+        48 624 72 71<br>
+        bok@cwspiekarski.pl
+      </p>
 
-<div class="contact-block">
+      <p>
+        <strong>Pomoc drogowa 24/7:</strong><br>
+        602 616 999
+      </p>
 
-<div class="contact-info">
-<h3>CWS Piekarski</h3>
+      <p>
+        <strong>Godziny otwarcia:</strong><br>
+        Pon–Pt: 8:00–16:00<br>
+        Sobota: 8:00–12:00
+      </p>
 
-<p>
-<strong>Adres:</strong><br>
-26-900 Kozienice<br>
-Brzeźnica 99
-</p>
-
-<p>
-<strong>Kontakt:</strong><br>
-48 624 71 68<br>
-48 624 72 71<br>
-bok@cwspiekarski.pl
-</p>
-
-<p>
-<strong>Pomoc drogowa 24/7:</strong><br>
-602 616 999
-</p>
-
-<p>
-<strong>Godziny otwarcia:</strong><br>
-Pon–Pt: 8:00–16:00<br>
-Sobota: 8:00–12:00
-</p>
-
-<div class="contact-buttons">
-<a href="tel:+48486247168" class="btn-primary">Zadzwoń</a>
-<a href="https://www.google.com/maps?q=Brzeźnica+99,+26-900+Kozienice" target="_blank" class="btn-secondary">Nawiguj</a>
-</div>
-
-</div>
-
-<div class="contact-map">
-<iframe src="https://www.google.com/maps?q=Brzeźnica+99,+26-900+Kozienice&output=embed" width="100%" height="380" style="border:0;" loading="lazy"></iframe>
-</div>
-
-</div>
-</div>
+      <div class="contact-buttons">
+        <a href="tel:+48486247168" class="btn-primary">Zadzwoń</a>
+        <a href="https://www.google.com/maps?q=Brzeźnica+99,+26-900+Kozienice" target="_blank" class="btn-secondary">Nawiguj</a>
+      </div>
+    </div>
+  </div>
 </section>
 
 <footer class="footer-main">
@@ -367,6 +375,7 @@ Centrum Napraw Samochodowych w Kozienicach. Naprawy powypadkowe, mechanika, SKP,
 <li><a href="skp.html">SKP</a></li>
 <li><a href="holowanie.html">Holowanie 24/7</a></li>
 <li><a href="wynajem.html">Wynajem</a></li>
+<li><a href="aktualnosci.html">Aktualności</a></li>
 <li><a href="kontakt.html">Kontakt</a></li>
 </ul>
 </div>
@@ -551,6 +560,81 @@ setInterval(() => {
     }
     showSlide(currentSlide);
 }, 6000);
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll(".section");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, {
+        threshold: 0.3
+    });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
+</script>
+<div class="social-fixed">
+    <a href="https://facebook.com/TWOJPROFIL" target="_blank" class="social fb">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://instagram.com/TWOJPROFIL" target="_blank" class="social ig">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://tiktok.com/@TWOJPROFIL" target="_blank" class="social tt">
+        <i class="fab fa-tiktok"></i>
+    </a>
+</div>
+<script>
+
+function switchHero(event,type){
+
+const title = document.getElementById("hero-title");
+const text = document.getElementById("hero-text");
+const primary = document.getElementById("hero-primary");
+
+document.querySelectorAll(".tab").forEach(tab=>{
+tab.classList.remove("active");
+});
+
+event.target.classList.add("active");
+
+if(type==="wypadek"){
+title.innerHTML="Naprawy powypadkowe i kompleksowa obsługa szkód w Kozienicach";
+text.innerHTML="Pomagamy w formalnościach, współpracujemy z ubezpieczycielami i realizujemy naprawy bezgotówkowe z OC sprawcy.";
+primary.href="szkoda-komunikacyjna.html";
+primary.innerHTML="Zgłoś szkodę";
+}
+
+if(type==="mechanika"){
+title.innerHTML="Mechanika pojazdowa – serwis samochodowy w Kozienicach";
+text.innerHTML="Diagnostyka, naprawy mechaniczne, zawieszenie, hamulce i pełna obsługa serwisowa pojazdów.";
+primary.href="mechanika.html";
+primary.innerHTML="Zobacz mechanikę";
+}
+
+if(type==="skp"){
+title.innerHTML="Stacja Kontroli Pojazdów – badania techniczne";
+text.innerHTML="Wykonujemy okresowe badania techniczne pojazdów osobowych, dostawczych i motocykli.";
+primary.href="skp.html";
+primary.innerHTML="Sprawdź SKP";
+}
+
+if(type==="wynajem"){
+title.innerHTML="Wynajem pojazdów – samochody, skuter i przyczepa";
+text.innerHTML="Dysponujemy własną flotą samochodów zastępczych, skuterem 125 cm³ oraz przyczepą transportową.";
+primary.href="wynajem.html";
+primary.innerHTML="Zobacz wynajem";
+}
+
+}
+
 </script>
 </body>
 </html>
