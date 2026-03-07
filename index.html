@@ -1,640 +1,355 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CWS Piekarski – Naprawy Powypadkowe i Mechanika Kozienice</title>
+    <meta name="description" content="Naprawy powypadkowe, mechanika, stacja kontroli pojazdów, holowanie 24h i wynajem aut – Kozienice i okolice.">
+    <meta name="google-site-verification" content="duXvOSupE5VvoGKIurfdUXfkPlj5D6680ZqY4Vy80lE" />
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<meta charset="UTF-8">
-<title>CWS Piekarski – Centrum Napraw Samochodowych</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Naprawy powypadkowe, mechanika, stacja kontroli pojazdów, holowanie 24h i wynajem aut – Kozienice i okolice.">
-<link rel="stylesheet" href="assets/css/style.css">
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-XBYX8MP241');
-</script>
-<head>
-<meta charset="UTF-8">
-<meta name="google-site-verification" content="duXvOSupE5VvoGKIurfdUXfkPlj5D6680ZqY4Vy80lE" />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XBYX8MP241"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XBYX8MP241');
+    </script>
 </head>
 <body>
+<a href="tel:+48486247168" id="FIXED_CALL_STEEL">
+    <i class="fas fa-phone-alt"></i> ZADZWOŃ TERAZ
+</a>
 
+<style>
+    /* Styl przypisany do ID ma najwyższy priorytet w CSS */
+    #FIXED_CALL_STEEL {
+        display: none !important; /* Ukryty na komputerze */
+    }
+
+    @media (max-width: 992px) {
+        #FIXED_CALL_STEEL {
+            /* Wymuszamy parametry, których JS nie nadpisze łatwo */
+            display: flex !important;
+            position: fixed !important;
+            bottom: 20px !important;
+            left: 5vw !important;
+            width: 90vw !important;
+            height: 60px !important;
+            background-color: #7ac943 !important;
+            color: #ffffff !important;
+            z-index: 2147483647 !important; /* Absolutne maksimum systemowe */
+            
+            /* Wygląd */
+            align-items: center !important;
+            justify-content: center !important;
+            text-decoration: none !important;
+            border-radius: 50px !important;
+            font-weight: 900 !important;
+            font-size: 18px !important;
+            gap: 10px !important;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6) !important;
+            
+            /* Ochrona przed znikaniem (GPU Rendering) */
+            opacity: 1 !important;
+            visibility: visible !important;
+            pointer-events: auto !important;
+            transform: none !important; 
+            -webkit-transform: none !important;
+        }
+    }
+</style>
 <header>
-<div class="container nav">
-<div class="logo">CWS Piekarski</div>
-<nav>
-<ul>
-<li>
-<a href="index.html" class="home-icon">
-<i class="fas fa-home"></i>
-</a>
-</li>
-<li><a href="naprawy-powypadkowe.html">Naprawy powypadkowe</a></li>
-<li><a href="mechanika.html">Mechanika</a></li>
-<li><a href="skp.html">SKP</a></li>
-<li><a href="holowanie.html">Holowanie 24/7</a></li>
-<li><a href="wynajem.html">Wynajem</a></li>
+    <div class="container nav">
+        <div class="logo">CWS Piekarski</div>
+        
+        <button class="menu-toggle" aria-label="Otwórz menu">
+            <i class="fas fa-bars"></i>
+        </button>
 
-<li><a href="kontakt.html">Kontakt</a></li>
-</ul>
-</nav>
-<a class="phone-btn" href="tel:+48486247168">
-☎ 48 624 71 68
-</a>
-
-</div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html" class="home-icon"><i class="fas fa-home"></i></a></li>
+                <li><a href="naprawy-powypadkowe.html">Naprawy powypadkowe</a></li>
+                <li><a href="mechanika.html">Mechanika</a></li>
+                <li><a href="skp.html">SKP</a></li>
+                <li><a href="holowanie.html">Holowanie 24/7</a></li>
+                <li><a href="wynajem.html">Wynajem</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <a class="phone-btn" href="tel:+48486247168">☎ 48 624 71 68</a>
+    </div>
 </header>
 
-
-<!-- HERO -->
 <section class="hero">
-<div class="container">
+    <div class="container">
+        <div class="hero-tabs">
+            <button class="tab active" onclick="switchHero(event,'wypadek')">NAPRAWY POWYPADKOWE</button>
+            <button class="tab" onclick="switchHero(event,'mechanika')">MECHANIKA POJAZDOWA</button>
+            <button class="tab" onclick="switchHero(event,'skp')">BADANIA TECHNICZNE (SKP)</button>
+            <button class="tab" onclick="switchHero(event,'wynajem')">AUTO ZASTĘPCZE</button>
+        </div>
 
-<div class="hero-tabs">
-
-<button class="tab active" onclick="switchHero(event,'wypadek')">
-<span class="tab-icon">🚗</span>
-Naprawy powypadkowe
-</button>
-
-<button class="tab" onclick="switchHero(event,'mechanika')">
-<span class="tab-icon">🔧</span>
-Mechanika
-</button>
-
-<button class="tab" onclick="switchHero(event,'skp')">
-<span class="tab-icon">✔</span>
-SKP
-</button>
-
-<button class="tab" onclick="switchHero(event,'wynajem')">
-<span class="tab-icon">🚙</span>
-Wynajem
-</button>
-
-</div>
-
-
-<div id="hero-content">
-
-<h1 id="hero-title">
-Naprawy powypadkowe i kompleksowa obsługa szkód w Kozienicach
-</h1>
-
-<p id="hero-text">
-Pomagamy w formalnościach, współpracujemy z ubezpieczycielami i realizujemy naprawy bezgotówkowe z OC sprawcy.
-</p>
-
-<div class="hero-cta">
-
-<a id="hero-primary"
-href="szkoda-komunikacyjna.html"
-class="btn-primary">
-Zgłoś szkodę
-</a>
-
-<a id="hero-secondary"
-href="tel:+48486247168"
-class="btn-secondary">
-Zadzwoń
-</a>
-
-</div>
-
-</div>
-
-</div>
+        <div id="hero-content">
+            <h1 id="hero-title">Kompleksowe naprawy powypadkowe i bezgotówkowa likwidacja szkód</h1>
+            <p id="hero-text">Odzyskaj spokój po kolizji. Zapewniamy pełne wsparcie formalne, współpracę z ubezpieczycielami i auto zastępcze na czas naprawy.</p>
+            <div class="hero-cta">
+                <a id="hero-primary" href="szkoda-komunikacyjna.html" class="btn-primary">ZGŁOŚ SZKODĘ ONLINE</a>
+                <a id="hero-secondary" href="tel:+48486247168" class="btn-secondary">ZADZWOŃ TERAZ</a>
+            </div>
+        </div>
+    </div>
 </section>
 
-<!-- GOOGLE REVIEWS PREMIUM -->
 <section class="section google-reviews">
-<div class="container">
-<h2>Klienci oceniają nas na 4,7 ★ w Google</h2>
+    <div class="container">
+        <h2 class="centered-h2 scroll-reveal">Klienci oceniają nas na 4,7 ★ w Google</h2>
+        <div class="rating-summary">
+            <div class="rating-number">4,7</div>
+            <div class="rating-stars">★★★★★</div>
+            <div class="rating-count">Ponad 90 opinii</div>
+        </div>
+        
+        <div class="reviews-slider">
+            <div class="review-slide active">
+                <p>Jestem zadowolony z wykonanej usługi. Podejście szefa serwisu bardzo profesjonalne, wszystko wytłumaczył jak długo potrwa naprawa, na czas naprawy dostałem <strong>samochód zastępczy</strong>. Bardzo miła i sympatyczna obsługa Pań pracujących w biurze. Efekt końcowy wielkie WOW, polecam tą firmę.</p>
+                <span>— Kazimierz</span>
+            </div>
+            <div class="review-slide">
+                <p>Warsztat CWS Piekarski jest po prostu niesamowity! Zrobili po prostu coś niewyobrażalnego i niemożliwego dla mnie. Zwróciłem się do nich w sprawie <strong>naprawy mojego samochodu marki Lada</strong>... w czasie sankcji znaleźli części zamienne, których nie było w UE. Bardzo dziękuję i polecam!</p>
+                <span>— Aleks</span>
+            </div>
+            <div class="review-slide">
+                <p>Miła obsługa, na czas naprawy otrzymałem <strong>samochód zastępczy</strong>, auto zrobione starannie, kolor lakieru bardzo dobrze dobrany. Wszystkie sprawy związane z odszkodowaniem warsztat załatwia sam.</p>
+                <span>— Janusz</span>
+            </div>
+        </div>
 
-<div class="rating-summary">
-    <div class="rating-number">4,7</div>
-    <div class="rating-stars">★★★★★</div>
-    <div class="rating-count">90 opinii</div>
-</div>
-
-<div class="reviews-slider">
-
-<div class="review-slide active">
-<p>Jestem zadowolony z wykonanej usługi. Podejście szefa serwisu bardzo profesjonalne, wszystko wytłumaczył jak długo potrwa naprawa, na czas naprawy dostałem samochód zastępczy. Bardzo miła i sympatyczna obsługa Pań pracujących w biurze. Efekt końcowy wielkie WOW, polecam tą firmę.</p>
-<span>— Kazimierz </span>
-</div>
-
-<div class="review-slide">
-<p>Warsztat CWS Piekarski jest po prostu niesamowity! Zrobili po prostu coś niewyobrażalnego i niemożliwego dla mnie. Zwróciłem się do nich w sprawie naprawy mojego samochodu po kolizji drogowej marki Lada, który został sprowadzony z Rosji w roku 2021, a teraz w czasie sankcji, w czasie wojny, kiedy w UE nie ma żadnych części zamiennych do marki tych samochodów, oni go naprawili, znaleźli wszystko, nawet nie wiem gdzie i w jaki sposób, ale zrobili wszystko, co mogli, wszystko, co było możliwe. Bardzo dziękuję i polecam wszystkim!!!! Teraz - tylko i wyłącznie CWS Piekarski!!! Dziękuję ślicznie!!!!!</p>
-<span>— Aleks </span>
-</div>
-
-<div class="review-slide">
-<p>Świetny kontakt z obsługą – wszystko jasno wytłumaczone. Profesjonalne podejście i miła atmosfera. Dodatkowy plus za możliwość skorzystania z auta zastępczego. Na pewno wrócę, jeśli znów będę potrzebował pomocy z autem!</p>
-<span>— Mateusz </span>
-</div>
-
-<div class="review-slide">
-<p>Miła obsługa, na czas naprawy otrzymałem samochód zastępczy, auto zrobione starannie, kolor lakieru bardzo dobrze dobrany, niema różnic. Elementy nadwozia dobrze spasowane. Wszystkie sprawy związane z odszkodowaniem warsztat załatwia sam. Polecam serwis CWS Piekarski.</p>
-<span>— Janusz </span>
-</div>
-
-<div class="review-slide">
-<p>"Mechanik rodzinny" wszystkich moich samochodów na przestrzeni 30 lat. Pełen profesjonalizm i najwyższa kultura od zawsze. Firma godna polecenia bez żadnych zastrzeżeń.</p>
-<span>— Max </span>
-</div>
-
-<div class="review-slide">
-<p>Jestem stałym klientem CWS Piekarski: przeglądy, wymiana opon, naprawy i dzięki temu mój 16 letni samochód jest zawsze w pełni sprawny. Fachowa miła, obsługa, polecam!!!</p>
-<span>— Jerzy </span>
-</div>
-
-<div class="review-slide">
-<p>Szkoda usunięta z zachowaniem najwyższej jakości i w krótkim czasie. Polecam.</p>
-<span>— Marek </span>
-</div>
-
-<div class="review-slide">
-<p>Rewelacyjna firma ma super personel. Poziom obsługi na europejskim poziomie. Z czystym sercem mogę polecić to miejsce 👍</p>
-<span>— Dorota </span>
-</div>
-
-<div class="review-slide">
-<p>Polecam, profesjonalna i kompleksowa obsługa. Blacharz, lakiernik, mechanik. Miła obsługa. Zakład przy głównej trasie, dobry dojazd.</p>
-<span>— Ewa </span>
-</div>
-
-<div class="review-slide">
-<p>Wykonali naprawę blacharską z ubezpieczenia AC. Bardzo dobry kontakt, wszystkie zmiany i stan naprawy uzgodniony telefonicznie. Na plus, przy okazji naprawy została wykonana ocena techniczna pojazdu w czasie której wykryto usterki zawieszenia.</p>
-<span>— Mirosław </span>
-</div>
-
-<div class="review-slide">
-<p>Wyjątkowo solidny i rzetelny mechanik. Sama procedura przyjęcia auta wzorowa. Stały kontakt z klientem w formie telefonicznej czy sms. Po prostu ma się poczucie, że samochód jest w rękach profesjonalisty. Warsztat godny polecania.</p>
-<span>— Daria </span>
-</div>
-
-</div>
-
-<div class="google-link">
-    <a href="https://www.google.com/search?q=cws+piekarski" target="_blank" class="btn-primary">
-        Zobacz wszystkie opinie w Google
-    </a>
-</div>
-
-</div>
-</section>
-<!-- DLACZEGO MY - WERSJA GŁÓWNA -->
-<section class="section section-dark leader-section">
-<div class="container">
-<h2>Lider napraw samochodowych w regionie od 1972 roku</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Od 1972 roku na rynku</h3>
-<p>
-Ponad 50 lat doświadczenia w branży motoryzacyjnej w Kozienicach.
-Budujemy markę opartą na jakości, odpowiedzialności i zaufaniu klientów.
-</p>
-</div>
-
-<div class="card">
-<h3>Kompleksowe centrum motoryzacyjne</h3>
-<p>
-Blacharnia i lakiernia, mechanika pojazdowa, stacja kontroli pojazdów,
-pomoc drogowa 24/7 oraz wynajem – wszystko w jednym miejscu.
-</p>
-</div>
-
-<div class="card">
-<h3>Nowoczesne zaplecze techniczne</h3>
-<p>
-Pracujemy zgodnie z technologią producentów,
-korzystając z profesjonalnego sprzętu i sprawdzonych rozwiązań.
-</p>
-</div>
-
-<div class="card">
-<h3>Lokalna firma – realna odpowiedzialność</h3>
-<p>
-Działamy w regionie od pokoleń.
-Bierzemy odpowiedzialność za każdą naprawę i każdą usługę.
-</p>
-</div>
-
-</div>
-</div>
-</section>
-<!-- LICZNIKI -->
-<section class="section section-dark">
-<div class="container">
-<h2>Siła doświadczenia</h2>
-
-<div class="stats">
-
-<div class="stat">
-<div class="stat-number" data-target="50">0</div>
-<p>Lat na rynku</p>
-</div>
-
-<div class="stat">
-<div class="stat-number" data-target="10000">0</div>
-<p>Wykonanych napraw</p>
-</div>
-
-<div class="stat">
-<div class="stat-number" data-target="24">0</div>
-<p>Godziny pomocy drogowej</p>
-</div>
-
-<div class="stat">
-<div class="stat-number" data-target="100">0</div>
-<p>% zaangażowania</p>
-</div>
-
-</div>
-</div>
+        <div class="google-link">
+            <a href="https://www.google.com/search?q=cws+piekarski" target="_blank" class="btn-primary">Zobacz wszystkie opinie w Google</a>
+        </div>
+    </div>
 </section>
 
+<section class="section section-dark why-section">
+    <div class="container">
+        <h2 class="centered-h2 scroll-reveal">Lider napraw samochodowych w regionie od 1972 roku</h2>
+        <div class="cards">
+            <div class="card"><h3>Od 1972 roku na rynku</h3><p>Ponad 50 lat doświadczenia w branży motoryzacyjnej w Kozienicach.</p></div>
+            <div class="card"><h3>Kompleksowe centrum</h3><p>Blacharnia, lakiernia, mechanika, SKP, pomoc 24/7 w jednym miejscu.</p></div>
+            <div class="card"><h3>Nowoczesne zaplecze</h3><p>Pracujemy zgodnie z technologią producentów na profesjonalnym sprzęcie.</p></div>
+            <div class="card"><h3>Lokalna firma</h3><p>Działamy w regionie od pokoleń. Bierzemy odpowiedzialność za każdą usługę.</p></div>
+        </div>
+    </div>
+</section>
 
+<section class="section section-dark stats-section">
+    <div class="container">
+        <h2 class="centered-h2 scroll-reveal">Siła doświadczenia</h2>
+        <div class="stats">
+            <div class="stat"><div class="stat-number" data-target="50">0</div><p>Lat na rynku</p></div>
+            <div class="stat"><div class="stat-number" data-target="10000">0</div><p>Wykonanych napraw</p></div>
+            <div class="stat"><div class="stat-number" data-target="24">0</div><p>Godziny pomocy drogowej</p></div>
+            <div class="stat"><div class="stat-number" data-target="100">0</div><p>% zaangażowania</p></div>
+        </div>
+    </div>
+</section>
 
-<script src="https://apis.google.com/js/platform.js?onload=renderBadge" async defer></script>
-<script>
-function renderBadge() {
-  window.gapi.load('reviewbadge', function() {
-      window.gapi.reviewbadge.render({ /* no params needed */ });
-  });
-}
-</script>
-
-<!-- USŁUGI -->
-<section class="section section-dark services-section">
-<div class="container">
-<h2>Centrum Napraw Samochodowych</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Naprawy powypadkowe</h3>
-<p>
-Kompleksowa likwidacja szkód komunikacyjnych oraz pełna obsługa formalności.
-</p>
-<a href="naprawy-powypadkowe.html" class="card-link">Dowiedz się więcej</a>
-</div>
-
-<div class="card">
-<h3>Mechanika pojazdowa</h3>
-<p>
-Serwis bieżący, wymiana opon, klimatyzacja i naprawy eksploatacyjne.
-</p>
-<a href="mechanika.html" class="card-link">Dowiedz się więcej</a>
-</div>
-
-<div class="card">
-<h3>Stacja Kontroli Pojazdów</h3>
-<p>
-Badania techniczne samochodów osobowych i dostawczych.
-</p>
-<a href="skp.html" class="card-link">Dowiedz się więcej</a>
-</div>
-
-<div class="card">
-<h3>Wynajem i auto zastępcze</h3>
-<p>
-Auto zastępcze z OC sprawcy oraz wynajem krótkoterminowy.
-</p>
-<a href="wynajem.html" class="card-link">Dowiedz się więcej</a>
-</div>
-
-</div>
-</div>
-
+<section class="section services-grid-section">
+    <div class="container">
+        <h2 class="centered-h2 scroll-reveal">Centrum Napraw Samochodowych</h2>
+        <div class="services-tiles">
+            <a href="naprawy-powypadkowe.html" class="service-tile">
+                <h3>Naprawy powypadkowe</h3>
+                <p>Kompleksowa likwidacja szkód komunikacyjnych oraz pełna obsługa formalności.</p>
+                <span class="more">Dowiedz się więcej</span>
+            </a>
+            <a href="mechanika.html" class="service-tile">
+                <h3>Mechanika pojazdowa</h3>
+                <p>Serwis bieżący, wymiana opon, klimatyzacja i naprawy eksploatacyjne.</p>
+                <span class="more">Dowiedz się więcej</span>
+            </a>
+            <a href="skp.html" class="service-tile">
+                <h3>Stacja Kontroli Pojazdów</h3>
+                <p>Badania techniczne samochodów osobowych i dostawczych.</p>
+                <span class="more">Dowiedz się więcej</span>
+            </a>
+            <a href="wynajem.html" class="service-tile">
+                <h3>Wynajem i auto zastępcze</h3>
+                <p>Auto zastępcze z OC sprawcy oraz wynajem krótkoterminowy.</p>
+                <span class="more">Dowiedz się więcej</span>
+            </a>
+        </div>
+    </div>
+</section>
 
 <section class="contact-section">
-  <div class="contact-map-bg">
-    <iframe 
-      src="https://www.google.com/maps?q=Brzeźnica+99,+26-900+Kozienice&output=embed"
-      loading="lazy">
-    </iframe>
+    <div class="contact-map-bg">
+       <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2472.03159954005!2d21.63746377720993!3d51.552378906939945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4718903cb6abd77f%3A0xb56fa059129cf45e!2sCWS%20Piekarski!5e0!3m2!1spl!2spl!4v1715600000000!5m2!1spl!2spl" 
+    width="100%" 
+    height="100%" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+        
+        <div class="contact-card">
+            <h2>Kontakt</h2>
+            <div class="contact-details">
+                <h3>CWS Piekarski</h3>
+                <p><i class="fas fa-map-marker-alt"></i> <strong>Adres:</strong> 26-900 Kozienice, Brzeźnica 99</p>
+                
+                <div class="contact-group">
+                    <p><i class="fas fa-phone-alt"></i> <strong>Biuro / SKP:</strong><br>
+                       <a href="tel:+48486247168">48 624 71 68</a>, <a href="tel:+48486247271">48 624 72 71</a></p>
+                    
+                    <div class="emergency-phone">
+                        <p><i class="fas fa-truck-pickup"></i> <strong>Pomoc drogowa 24/7:</strong><br>
+                         <a href="tel:+48602616999">602 616 999</a></p>
+                    </div>
+                </div>
 
-    <div class="contact-card">
-      <h2>Kontakt</h2>
+                <div class="contact-group">
+                    <p><i class="fas fa-envelope"></i> <strong>E-mail:</strong><br>
+                       <a href="mailto:bok@cwspiekarski.pl">bok@cwspiekarski.pl</a><br>
+                       <a href="mailto:szkody@cwspiekarski.pl">szkody@cwspiekarski.pl</a></p>
+                </div>
 
-      <h3>CWS Piekarski</h3>
-
-      <p>
-        <strong>Adres:</strong><br>
-        26-900 Kozienice<br>
-        Brzeźnica 99
-      </p>
-
-      <p>
-        <strong>Kontakt:</strong><br>
-        48 624 71 68<br>
-        48 624 72 71<br>
-        bok@cwspiekarski.pl
-      </p>
-
-      <p>
-        <strong>Pomoc drogowa 24/7:</strong><br>
-        602 616 999
-      </p>
-
-      <p>
-        <strong>Godziny otwarcia:</strong><br>
-        Pon–Pt: 8:00–16:00<br>
-        Sobota: 8:00–12:00
-      </p>
-
-      <div class="contact-buttons">
-        <a href="tel:+48486247168" class="btn-primary">Zadzwoń</a>
-        <a href="https://www.google.com/maps?q=Brzeźnica+99,+26-900+Kozienice" target="_blank" class="btn-secondary">Nawiguj</a>
-      </div>
+                <p><i class="fas fa-clock"></i> <strong>Godziny:</strong><br>
+                   Pon–Pt: 8:00–16:00<br>
+                   Sob: 8:00–12:00</p>
+            </div>
+            <div class="contact-buttons">
+                <a href="tel:+48486247168" class="btn-primary">ZADZWOŃ DO BIURA</a>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
 
 <footer class="footer-main">
-<div class="container footer-grid">
-
-<div class="footer-col">
-<h3>CWS Piekarski</h3>
-<p>
-Centrum Napraw Samochodowych w Kozienicach. Naprawy powypadkowe, mechanika, SKP, pomoc drogowa 24/7 oraz wynajem pojazdów.
-</p>
-</div>
-
-<div class="footer-col">
-<h4>Szybkie linki</h4>
-<ul>
-<li><a href="naprawy-powypadkowe.html">Naprawy powypadkowe</a></li>
-<li><a href="mechanika.html">Mechanika</a></li>
-<li><a href="skp.html">SKP</a></li>
-<li><a href="holowanie.html">Holowanie 24/7</a></li>
-<li><a href="wynajem.html">Wynajem</a></li>
-<li><a href="aktualnosci.html">Aktualności</a></li>
-<li><a href="kontakt.html">Kontakt</a></li>
-</ul>
-</div>
-
-<div class="footer-col">
-<h4>Kontakt</h4>
-<p>
-26-900 Kozienice<br>
-Brzeźnica 99
-</p>
-
-<p>
-Tel: 48 624 71 68<br>
-48 624 72 71
-</p>
-
-<p>
-Pomoc drogowa 24h:<br>
-602 616 999
-</p>
-
-<p>
-E-mail:<br>
-bok@cwspiekarski.pl
-</p>
-</div>
-
-</div>
-
-<div class="footer-bottom">
-© 2026 Cezary Piekarski – Wszystkie prawa zastrzeżone
-</div>
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <h3>CWS Piekarski</h3>
+            <p>Centrum Napraw Samochodowych w Kozienicach. Naprawy powypadkowe, mechanika, SKP, pomoc drogowa 24/7 oraz wynajem pojazdów.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Szybkie linki</h4>
+            <ul>
+                <li><a href="naprawy-powypadkowe.html">Naprawy powypadkowe</a></li>
+                <li><a href="mechanika.html">Mechanika</a></li>
+                <li><a href="skp.html">SKP</a></li>
+                <li><a href="holowanie.html">Holowanie 24/7</a></li>
+                <li><a href="wynajem.html">Wynajem</a></li>
+                <li><a href="aktualnosci.html">Aktualności</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Kontakt</h4>
+            <p>26-900 Kozienice<br>
+               Brzeźnica 99<br>
+               Tel: <a href="tel:+48486247168">48 624 71 68</a><br>
+               <a href="tel:+48486247271" style="display: block; margin-left: 0px;">48 624 72 71</a><br>
+               Pomoc drogowa 24h:<br>
+               <a href="tel:+48602616999">602 616 999</a><br>
+               E-mail:<br>
+               <a href="mailto:bok@cwspiekarski.pl">bok@cwspiekarski.pl</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">© 2026 Cezary Piekarski – Wszystkie prawa zastrzeżone</div>
 </footer>
 
-<script>
-function switchHero(e, type) {
-const content = document.getElementById("hero-content");
-const title = document.getElementById("hero-title");
-const text = document.getElementById("hero-text");
-const primary = document.getElementById("hero-primary");
-const tabs = document.querySelectorAll(".tab");
-
-tabs.forEach(tab => tab.classList.remove("active"));
-e.currentTarget.classList.add("active");
-
-content.classList.remove("hero-animate-in");
-content.classList.add("hero-animate-out");
-
-setTimeout(() => {
-
-if (type === "wypadek") {
-title.innerText = "Naprawy powypadkowe i kompleksowa obsługa szkód w Kozienicach";
-text.innerText = "Pomagamy w formalnościach, współpracujemy z ubezpieczycielami i realizujemy naprawy bezgotówkowe z OC sprawcy.";
-primary.innerText = "Zgłoś szkodę";
-primary.href = "szkoda-komunikacyjna.html";
-}
-
-if (type === "mechanika") {
-title.innerText = "Mechanika pojazdowa – serwis i naprawy bieżące";
-text.innerText = "Serwisujemy samochody osobowe i dostawcze.";
-primary.innerText = "Umów wizytę";
-primary.href = "mechanika.html";
-}
-
-if (type === "skp") {
-title.innerText = "Stacja Kontroli Pojazdów – badania techniczne";
-text.innerText = "Wykonujemy obowiązkowe badania techniczne.";
-primary.innerText = "Sprawdź terminy";
-primary.href = "skp.html";
-}
-
-if (type === "wynajem") {
-title.innerText = "Wynajem pojazdów i auto zastępcze";
-text.innerText = "Zapewniamy auta zastępcze na czas naprawy.";
-primary.innerText = "Zobacz ofertę";
-primary.href = "wynajem.html";
-}
-
-content.classList.remove("hero-animate-out");
-content.classList.add("hero-animate-in");
-
-}, 200);
-}
-</script>
+<div class="social-fixed">
+    <a href="https://www.facebook.com/profile.php?id=100057295096815" target="_blank" class="social fb" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/cwspiekarski/" target="_blank" class="social ig" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@cwspiekarski?lang=pl-PL" target="_blank" class="social tt" title="TikTok"><i class="fab fa-tiktok"></i></a>
+</div>
 
 <script>
-const steps = document.querySelectorAll('.step');
-const process = document.querySelector('.process');
-
-const observer = new IntersectionObserver(entries => {
-entries.forEach(entry => {
-if (entry.isIntersecting) {
-entry.target.classList.add('visible');
-process.classList.add('active');
-}
-});
-}, { threshold: 0.2 });
-
-steps.forEach(step => {
-observer.observe(step);
-});
-</script>
-<script>
-const counters = document.querySelectorAll('.stat-number');
-
-const animateCounters = () => {
-    counters.forEach(counter => {
-        const target = +counter.getAttribute('data-target');
-        let count = 0;
-        const increment = target / 120;
-
-        const updateCounter = () => {
-            count += increment;
-            if (count < target) {
-                counter.innerText = Math.floor(count);
-                requestAnimationFrame(updateCounter);
-            } else {
-                counter.innerText = target + "+";
-            }
+    // Przełącznik Hero
+    function switchHero(e, type) {
+        const title = document.getElementById("hero-title");
+        const text = document.getElementById("hero-text");
+        const primary = document.getElementById("hero-primary");
+        document.querySelectorAll(".tab").forEach(tab => tab.classList.remove("active"));
+        e.currentTarget.classList.add("active");
+        const data = {
+            wypadek: ["Kompleksowe naprawy powypadkowe i likwidacja szkód", "Odzyskaj spokój po kolizji. Zapewniamy pełne wsparcie formalne, rozliczenie bezgotówkowe i auto zastępcze.", "ZGŁOŚ SZKODĘ", "szkoda-komunikacyjna.html"],
+            mechanika: ["Profesjonalny serwis mechaniczny i diagnostyka", "Od wymiany oleju po skomplikowane naprawy silnika. Twój samochód w rękach fachowców.", "UMÓW SERWIS", "mechanika.html"],
+            skp: ["Stacja Kontroli Pojazdów – pewny przegląd", "Sprawnie i rzetelnie sprawdzimy stan techniczny Twojego pojazdu. Zapraszamy.", "SPRAWDŹ TERMINY", "skp.html"],
+            wynajem: ["Wynajem aut i pojazdy zastępcze z OC sprawcy", "Pozostań mobilny! Oferujemy nowoczesną flotę aut zastępczych oraz wynajem.", "ZOBACZ FLOTĘ", "wynajem.html"]
         };
+        title.innerText = data[type][0];
+        text.innerText = data[type][1];
+        primary.innerText = data[type][2];
+        primary.href = data[type][3];
+    }
 
-        updateCounter();
+    // Obsługa Hamburgera
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('#main-nav');
+
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        const icon = menuToggle.querySelector('i');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-times');
     });
-};
 
-const statsSection = document.querySelector('.stats');
-const observerStats = new IntersectionObserver(entries => {
-    if (entries[0].isIntersecting) {
-        animateCounters();
-        observerStats.disconnect();
-    }
-}, { threshold: 0.4 });
-
-observerStats.observe(statsSection);
-</script>
-<script>
-const counters = document.querySelectorAll('.stat-number');
-
-const animateCounters = () => {
-    counters.forEach(counter => {
-        const target = +counter.getAttribute('data-target');
-        let count = 0;
-        const increment = target / 120;
-
-        const updateCounter = () => {
-            count += increment;
-            if (count < target) {
-                counter.innerText = Math.floor(count);
-                requestAnimationFrame(updateCounter);
-            } else {
-                counter.innerText = target + "+";
-            }
-        };
-
-        updateCounter();
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('active');
+            menuToggle.querySelector('i').classList.replace('fa-times', 'fa-bars');
+        });
     });
-};
 
-const statsSection = document.querySelector('.stats');
-const observerStats = new IntersectionObserver(entries => {
-    if (entries[0].isIntersecting) {
-        animateCounters();
-        observerStats.disconnect();
-    }
-}, { threshold: 0.4 });
+    // Liczniki statystyk
+    const animateCounters = () => {
+        document.querySelectorAll('.stat-number').forEach(counter => {
+            const target = +counter.getAttribute('data-target');
+            let count = 0;
+            const update = () => {
+                count += target / 50;
+                if (count < target) {
+                    counter.innerText = Math.floor(count);
+                    requestAnimationFrame(update);
+                } else {
+                    counter.innerText = target + "+";
+                }
+            };
+            update();
+        });
+    };
 
-observerStats.observe(statsSection);
-</script>
-<script>
-const slides = document.querySelectorAll('.review-slide');
-let currentSlide = 0;
-
-function showSlide(index) {
-    slides.forEach(slide => slide.classList.remove('active'));
-    slides[index].classList.add('active');
-}
-
-setInterval(() => {
-    currentSlide++;
-    if (currentSlide >= slides.length) {
-        currentSlide = 0;
-    }
-    showSlide(currentSlide);
-}, 6000);
-</script>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll(".section");
-
-    const observer = new IntersectionObserver((entries) => {
+    // Observer dla linii i liczników
+    const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
+                entry.target.classList.add('active');
+                if (entry.target.classList.contains('stats')) animateCounters();
             }
         });
-    }, {
-        threshold: 0.3
-    });
+    }, { threshold: 0.2 });
 
-    sections.forEach(section => {
-        observer.observe(section);
-    });
-});
+    document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+    if(document.querySelector('.stats')) observer.observe(document.querySelector('.stats'));
+
+    // Slider opinii
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.review-slide');
+    if(slides.length > 0) {
+        setInterval(() => {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }, 3000); 
+    }
 </script>
-<div class="social-fixed">
-    <a href="https://facebook.com/TWOJPROFIL" target="_blank" class="social fb">
-        <i class="fab fa-facebook-f"></i>
-    </a>
-    <a href="https://instagram.com/TWOJPROFIL" target="_blank" class="social ig">
-        <i class="fab fa-instagram"></i>
-    </a>
-    <a href="https://tiktok.com/@TWOJPROFIL" target="_blank" class="social tt">
-        <i class="fab fa-tiktok"></i>
-    </a>
-</div>
-<script>
 
-function switchHero(event,type){
-
-const title = document.getElementById("hero-title");
-const text = document.getElementById("hero-text");
-const primary = document.getElementById("hero-primary");
-
-document.querySelectorAll(".tab").forEach(tab=>{
-tab.classList.remove("active");
-});
-
-event.target.classList.add("active");
-
-if(type==="wypadek"){
-title.innerHTML="Naprawy powypadkowe i kompleksowa obsługa szkód w Kozienicach";
-text.innerHTML="Pomagamy w formalnościach, współpracujemy z ubezpieczycielami i realizujemy naprawy bezgotówkowe z OC sprawcy.";
-primary.href="szkoda-komunikacyjna.html";
-primary.innerHTML="Zgłoś szkodę";
-}
-
-if(type==="mechanika"){
-title.innerHTML="Mechanika pojazdowa – serwis samochodowy w Kozienicach";
-text.innerHTML="Diagnostyka, naprawy mechaniczne, zawieszenie, hamulce i pełna obsługa serwisowa pojazdów.";
-primary.href="mechanika.html";
-primary.innerHTML="Zobacz mechanikę";
-}
-
-if(type==="skp"){
-title.innerHTML="Stacja Kontroli Pojazdów – badania techniczne";
-text.innerHTML="Wykonujemy okresowe badania techniczne pojazdów osobowych, dostawczych i motocykli.";
-primary.href="skp.html";
-primary.innerHTML="Sprawdź SKP";
-}
-
-if(type==="wynajem"){
-title.innerHTML="Wynajem pojazdów – samochody, skuter i przyczepa";
-text.innerHTML="Dysponujemy własną flotą samochodów zastępczych, skuterem 125 cm³ oraz przyczepą transportową.";
-primary.href="wynajem.html";
-primary.innerHTML="Zobacz wynajem";
-}
-
-}
-
-</script>
 </body>
 </html>
