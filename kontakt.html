@@ -9,6 +9,33 @@
 </head>
 <body>
 
+<style>
+    #FIXED_CALL_STEEL {
+        display: none !important;
+    }
+    @media (max-width: 992px) {
+        #FIXED_CALL_STEEL {
+            display: flex !important;
+            position: fixed !important;
+            bottom: 20px !important;
+            left: 5vw !important;
+            width: 90vw !important;
+            height: 60px !important;
+            background-color: #7ac943 !important;
+            color: #ffffff !important;
+            z-index: 2147483647 !important;
+            align-items: center !important;
+            justify-content: center !important;
+            text-decoration: none !important;
+            border-radius: 50px !important;
+            font-weight: 900 !important;
+            font-size: 18px !important;
+            gap: 10px !important;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6) !important;
+        }
+    }
+</style>
+
 <a href="tel:+48486247168" id="FIXED_CALL_STEEL">
     <i class="fas fa-phone-alt"></i> ZADZWOŃ TERAZ
 </a>
@@ -83,30 +110,62 @@
     </div>
 </section>
 
-<footer class="footer-main" style="padding: 60px 0; background-color: #0a1929; border-top: 1px solid rgba(255,255,255,0.1);">
+<footer class="footer-main" style="padding: 60px 0; background-color: #0a1929;">
     <div class="container footer-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;">
+        
         <div class="footer-col">
             <h3 style="color: #fff; margin-bottom: 20px;">CWS Piekarski</h3>
-            <p style="color: #ccc; line-height: 1.6;">Od 1972 roku dbamy o bezpieczeństwo i sprawność samochodów naszych klientów w regionie Kozienic.</p>
+            <p style="color: #ccc; line-height: 1.6; margin-bottom: 25px;">
+                Centrum Napraw Samochodowych w Kozienicach. 
+                Mechanika, naprawy powypadkowe, SKP, 
+                pomoc drogowa 24/7 oraz wynajem pojazdów.
+            </p>
+            <div class="social-icons" style="display: flex; gap: 20px;">
+                <a href="https://www.facebook.com/profile.php?id=100057295096815" target="_blank" style="color: #fff; font-size: 24px; text-decoration: none;"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/cwspiekarski/" target="_blank" style="color: #fff; font-size: 24px; text-decoration: none;"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@cwspiekarski?lang=pl-PL" target="_blank" style="color: #fff; font-size: 24px; text-decoration: none;"><i class="fab fa-tiktok"></i></a>
+            </div>
         </div>
+
         <div class="footer-col">
             <h4 style="color: #fff; margin-bottom: 20px;">Szybkie linki</h4>
             <ul style="list-style: none; padding: 0;">
-                <li style="margin-bottom: 10px;"><a href="naprawy-powypadkowe.html" style="color: #ccc; text-decoration: none;">Naprawy powypadkowe</a></li>
-                <li style="margin-bottom: 10px;"><a href="mechanika.html" style="color: #ccc; text-decoration: none;">Mechanika</a></li>
-                <li><a href="kontakt.html" style="color: #ccc; text-decoration: none;">Kontakt</a></li>
+                <li style="margin-bottom: 12px;"><a href="naprawy-powypadkowe.html" style="color: #ccc; text-decoration: none;">Naprawy powypadkowe</a></li>
+                <li style="margin-bottom: 12px;"><a href="mechanika.html" style="color: #ccc; text-decoration: none;">Mechanika</a></li>
+                <li style="margin-bottom: 12px;"><a href="skp.html" style="color: #ccc; text-decoration: none;">SKP</a></li>
+                <li style="margin-bottom: 12px;"><a href="holowanie.html" style="color: #ccc; text-decoration: none;">Holowanie 24/7</a></li>
+                <li style="margin-bottom: 12px;"><a href="wynajem.html" style="color: #ccc; text-decoration: none;">Wynajem</a></li>
+                <li style="margin-bottom: 12px;"><a href="aktualnosci.html" style="color: #ccc; text-decoration: none;">Aktualności</a></li>
+                <li style="margin-bottom: 12px;"><a href="kontakt.html" style="color: #ccc; text-decoration: none;">Kontakt</a></li>
             </ul>
         </div>
+
         <div class="footer-col">
-            <h4 style="color: #fff; margin-bottom: 20px;">E-mail</h4>
-            <a href="mailto:bok@cwspiekarski.pl" style="color: #7ac943; text-decoration: none;">bok@cwspiekarski.pl</a>
+            <h4 style="color: #fff; margin-bottom: 20px;">Kontakt</h4>
+            <p style="color: #ccc; margin-bottom: 15px; line-height: 1.6;">
+                26-900 Kozienice<br>
+                Brzeźnica 99
+            </p>
+            <p style="color: #ccc; margin-bottom: 15px; line-height: 1.6;">
+                Tel: 48 624 71 68<br>
+                48 624 72 71
+            </p>
+            <p style="color: #ccc; margin-bottom: 15px;">
+                Pomoc drogowa 24h:<br>
+                <span style="color: #4caf50; font-weight: bold;">602 616 999</span>
+            </p>
+            <p style="color: #ccc;">
+                E-mail:<br>
+                <a href="mailto:bok@cwspiekarski.pl" style="color: #4caf50; text-decoration: none; font-weight: 500;">bok@cwspiekarski.pl</a>
+            </p>
         </div>
+
     </div>
-    <div class="footer-bottom" style="text-align: center; margin-top: 40px; color: #666; font-size: 0.9rem;">
+
+    <div class="footer-bottom" style="text-align: center; margin-top: 50px; padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.1); color: #888; font-size: 0.85rem;">
         © 2026 CWS Piekarski – Wszystkie prawa zastrzeżone
     </div>
 </footer>
-
 <div class="social-fixed">
     <a href="https://www.facebook.com/profile.php?id=100057295096815" target="_blank" class="social fb" title="Facebook"><i class="fab fa-facebook-f"></i></a>
     <a href="https://www.instagram.com/cwspiekarski/" target="_blank" class="social ig" title="Instagram"><i class="fab fa-instagram"></i></a>
