@@ -2,19 +2,23 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Kontakt – CWS Piekarski</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Skontaktuj się z CWS Piekarski w Kozienicach. Naprawy powypadkowe, mechanika, SKP, pomoc drogowa 24/7 i wynajem pojazdów.">
+    <title>Kontakt – CWS Piekarski Kozienice</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
+<a href="tel:+48486247168" id="FIXED_CALL_STEEL">
+    <i class="fas fa-phone-alt"></i> ZADZWOŃ TERAZ
+</a>
+
 <header>
     <div class="container nav">
         <div class="logo">CWS Piekarski</div>
-        <nav>
+        <nav id="main-nav">
             <ul>
-                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="index.html" class="home-icon"><i class="fas fa-home"></i></a></li>
                 <li><a href="naprawy-powypadkowe.html">Naprawy powypadkowe</a></li>
                 <li><a href="mechanika.html">Mechanika</a></li>
                 <li><a href="skp.html">SKP</a></li>
@@ -23,163 +27,91 @@
                 <li><a href="kontakt.html" class="active">Kontakt</a></li>
             </ul>
         </nav>
-        <a class="phone-btn" href="tel:+48486247168">48 624 71 68</a>
+        <a class="phone-btn" href="tel:+48486247168">☎ 48 624 71 68</a>
     </div>
 </header>
 
-<!-- HERO -->
 <section class="hero">
     <div class="container">
-        <h1>Kontakt</h1>
-        <p>
-            Skontaktuj się z nami – jesteśmy do Twojej dyspozycji.
-        </p>
+        <div class="hero-tabs">
+            <button class="tab" onclick="location.href='naprawy-powypadkowe.html'">NAPRAWY POWYPADKOWE</button>
+            <button class="tab" onclick="location.href='mechanika.html'">MECHANIKA POJAZDOWA</button>
+            <button class="tab" onclick="location.href='skp.html'">BADANIA TECHNICZNE (SKP)</button>
+            <button class="tab" onclick="location.href='wynajem.html'">AUTO ZASTĘPCZE</button>
+        </div>
+        <div id="hero-content">
+            <h1 id="hero-title">Skontaktuj się z nami</h1>
+            <p id="hero-text">Jesteśmy do Twojej dyspozycji. Zadzwoń, napisz lub odwiedź nasz serwis w Kozienicach.</p>
+            <div class="hero-cta">
+                <a href="tel:+48486247168" class="btn-primary">ZADZWOŃ DO BIURA</a>
+                <a href="https://g.page/r/CWSPiekarski" target="_blank" class="btn-secondary">WYWYZNACZ TRASĘ</a>
+            </div>
+        </div>
     </div>
 </section>
 
-<!-- DANE KONTAKTOWE -->
-<section class="section">
+<section class="section contact-page-details">
     <div class="container">
-        <h2>Dane kontaktowe</h2>
+        <div class="contact-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; margin-top: 40px;">
+            
+            <div class="contact-info-boxes">
+                <div class="info-box" style="background: #112233; padding: 30px; border-radius: 10px; margin-bottom: 20px; border-left: 4px solid #7ac943;">
+                    <h3 style="color: #fff; margin-bottom: 15px;"><i class="fas fa-map-marker-alt"></i> Nasz Adres</h3>
+                    <p style="color: #ccc; font-size: 1.1rem;">Brzeźnica 99, 26-900 Kozienice</p>
+                </div>
 
-        <div class="cards">
+                <div class="info-box" style="background: #112233; padding: 30px; border-radius: 10px; margin-bottom: 20px; border-left: 4px solid #7ac943;">
+                    <h3 style="color: #fff; margin-bottom: 15px;"><i class="fas fa-phone-alt"></i> Telefony</h3>
+                    <p style="color: #ccc;">Biuro: <a href="tel:+48486247168" style="color: #7ac943; font-weight: bold; text-decoration: none;">48 624 71 68</a></p>
+                    <p style="color: #ccc;">SKP: <a href="tel:+48486247271" style="color: #7ac943; font-weight: bold; text-decoration: none;">48 624 72 71</a></p>
+                    <p style="color: #ff4d4d; margin-top: 10px; font-weight: bold;">Pomoc drogowa 24/7: <br><a href="tel:+48602616999" style="color: #ff4d4d; font-size: 1.3rem; text-decoration: none;">602 616 999</a></p>
+                </div>
 
-            <div class="card">
-                <h3>Adres</h3>
-                <p>
-                    26-900 Kozienice<br>
-                    Brzeźnica 99
-                </p>
-                <a href="https://www.google.com/maps?q=Brzeźnica+99,+26-900+Kozienice" target="_blank" class="card-link">
-                    Otwórz w Google Maps
-                </a>
+                <div class="info-box" style="background: #112233; padding: 30px; border-radius: 10px; border-left: 4px solid #7ac943;">
+                    <h3 style="color: #fff; margin-bottom: 15px;"><i class="fas fa-clock"></i> Godziny Otwarcia</h3>
+                    <p style="color: #ccc;">Poniedziałek – Piątek: 8:00 – 16:00</p>
+                    <p style="color: #ccc;">Sobota: 8:00 – 12:00</p>
+                    <p style="color: #7ac943; font-style: italic; margin-top: 5px;">Pomoc drogowa: Całodobowo</p>
+                </div>
             </div>
 
-            <div class="card">
-                <h3>Telefony</h3>
-                <p>
-                    48 624 71 68<br>
-                    48 624 72 71
-                </p>
-                <p><strong>Pomoc drogowa 24/7:</strong><br>602 616 999</p>
-            </div>
-
-            <div class="card">
-                <h3>E-mail</h3>
-                <p>
-                    bok@cwspiekarski.pl<br>
-                    szkody@cwspiekarski.pl
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Godziny otwarcia</h3>
-                <p>
-                    Pon–Pt: 8:00–16:00<br>
-                    Sobota: 8:00–12:00<br>
-                    Niedziela: nieczynne
-                </p>
+            <div class="contact-map" style="border-radius: 10px; overflow: hidden; height: 100%; min-height: 400px;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2466.8!2d21.55!3d51.58!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDM0JzQ4LjAiTiAyMcKwMzMnMDAuMCJF!5e0!3m2!1spl!2spl!4v123456789" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
 
         </div>
     </div>
 </section>
 
-<!-- FORMULARZ -->
-<section class="section section-dark">
-    <div class="container">
-        <h2>Napisz do nas</h2>
-
-        <form action="mail.php" method="POST" class="contact-form">
-
-            <div class="form-group">
-                <input type="text" name="name" placeholder="Imię i nazwisko" required>
-            </div>
-
-            <div class="form-group">
-                <input type="email" name="email" placeholder="Adres e-mail" required>
-            </div>
-
-            <div class="form-group">
-                <input type="tel" name="phone" placeholder="Telefon">
-            </div>
-
-            <div class="form-group">
-                <textarea name="message" rows="5" placeholder="Treść wiadomości" required></textarea>
-            </div>
-
-            <button type="submit" class="btn-primary">Wyślij wiadomość</button>
-
-        </form>
-    </div>
-</section>
-
-<!-- MAPA -->
-<section class="section">
-    <div class="container">
-        <h2>Lokalizacja</h2>
-
-        <div class="contact-map" style="margin-top:30px;">
-            <iframe 
-                src="https://www.google.com/maps?q=Brzeźnica+99,+26-900+Kozienice&output=embed"
-                width="100%"
-                height="400"
-                style="border:0;"
-                loading="lazy">
-            </iframe>
-        </div>
-    </div>
-</section>
-
-<!-- CTA -->
-<section class="cta-dark">
-    <div class="container">
-        <h2>Potrzebujesz pomocy?</h2>
-        <p class="assist" style="font-size:36px;margin-top:20px;">
-            48 624 71 68
-        </p>
-        <p style="margin-top:15px;">
-            Pomoc drogowa 24/7: 602 616 999
-        </p>
-    </div>
-</section>
-
-<footer class="footer-main">
-    <div class="container footer-grid">
-
+<footer class="footer-main" style="padding: 60px 0; background-color: #0a1929; border-top: 1px solid rgba(255,255,255,0.1);">
+    <div class="container footer-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;">
         <div class="footer-col">
-            <h3>CWS Piekarski</h3>
-            <p>
-                Centrum Napraw Samochodowych w Kozienicach.
-                Mechanika, SKP, naprawy powypadkowe,
-                pomoc drogowa 24/7 oraz wynajem pojazdów.
-            </p>
+            <h3 style="color: #fff; margin-bottom: 20px;">CWS Piekarski</h3>
+            <p style="color: #ccc; line-height: 1.6;">Od 1972 roku dbamy o bezpieczeństwo i sprawność samochodów naszych klientów w regionie Kozienic.</p>
         </div>
-
         <div class="footer-col">
-            <h4>Szybkie linki</h4>
-            <ul>
-                <li><a href="naprawy-powypadkowe.html">Naprawy powypadkowe</a></li>
-                <li><a href="mechanika.html">Mechanika</a></li>
-                <li><a href="skp.html">SKP</a></li>
-                <li><a href="holowanie.html">Holowanie 24/7</a></li>
-                <li><a href="wynajem.html">Wynajem</a></li>
+            <h4 style="color: #fff; margin-bottom: 20px;">Szybkie linki</h4>
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 10px;"><a href="naprawy-powypadkowe.html" style="color: #ccc; text-decoration: none;">Naprawy powypadkowe</a></li>
+                <li style="margin-bottom: 10px;"><a href="mechanika.html" style="color: #ccc; text-decoration: none;">Mechanika</a></li>
+                <li><a href="kontakt.html" style="color: #ccc; text-decoration: none;">Kontakt</a></li>
             </ul>
         </div>
-
         <div class="footer-col">
-            <h4>Kontakt</h4>
-            <p>26-900 Kozienice<br>Brzeźnica 99</p>
-            <p>Tel: 48 624 71 68</p>
-            <p>E-mail: bok@cwspiekarski.pl</p>
+            <h4 style="color: #fff; margin-bottom: 20px;">E-mail</h4>
+            <a href="mailto:bok@cwspiekarski.pl" style="color: #7ac943; text-decoration: none;">bok@cwspiekarski.pl</a>
         </div>
-
     </div>
-
-    <div class="footer-bottom">
+    <div class="footer-bottom" style="text-align: center; margin-top: 40px; color: #666; font-size: 0.9rem;">
         © 2026 CWS Piekarski – Wszystkie prawa zastrzeżone
     </div>
 </footer>
+
+<div class="social-fixed">
+    <a href="https://www.facebook.com/profile.php?id=100057295096815" target="_blank" class="social fb" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/cwspiekarski/" target="_blank" class="social ig" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@cwspiekarski?lang=pl-PL" target="_blank" class="social tt" title="TikTok"><i class="fab fa-tiktok"></i></a>
+</div>
 
 </body>
 </html>

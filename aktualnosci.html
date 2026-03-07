@@ -1,79 +1,89 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aktualności | CWS Piekarski</title>
-
-<link rel="stylesheet" href="assets/css/style.css">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aktualności | CWS Piekarski Kozienice</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<header>
-<div class="container nav">
-<div class="logo">CWS Piekarski</div>
-
-<nav>
-<ul class="menu">
-<li><a href="index.html"><i class="fas fa-home"></i></a></li>
-<li><a href="naprawy-powypadkowe.html">Naprawy</a></li>
-<li><a href="mechanika.html">Mechanika</a></li>
-<li><a href="skp.html">SKP</a></li>
-<li><a href="holowanie.html">Holowanie 24/7</a></li>
-<li><a href="wynajem.html">Wynajem</a></li>
-<li><a href="kontakt.html">Kontakt</a></li>
-</ul>
-</nav>
-
-<a class="phone-btn" href="tel:+48486247168">
-☎ 48 624 71 68
+<a href="tel:+48486247168" id="FIXED_CALL_STEEL">
+    <i class="fas fa-phone-alt"></i> ZADZWOŃ TERAZ
 </a>
 
-</div>
+<header>
+    <div class="container nav">
+        <div class="logo">CWS Piekarski</div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html" class="home-icon"><i class="fas fa-home"></i></a></li>
+                <li><a href="naprawy-powypadkowe.html">Naprawy powypadkowe</a></li>
+                <li><a href="mechanika.html">Mechanika</a></li>
+                <li><a href="skp.html">SKP</a></li>
+                <li><a href="holowanie.html">Holowanie 24/7</a></li>
+                <li><a href="wynajem.html">Wynajem</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <a class="phone-btn" href="tel:+48486247168">☎ 48 624 71 68</a>
+    </div>
 </header>
 
-<div class="social-intro">
-<h2>Bądź na bieżąco</h2>
-<p>Obserwuj nas w mediach społecznościowych i sprawdzaj najnowsze realizacje, promocje oraz aktualności z CWS Piekarski.</p>
-</div>
 
 
-<!-- SOCIAL DUŻE IKONY -->
-<section class="news-social">
-<div class="container social-big">
+<section class="section news-content" id="feed">
+    <div class="container">
+        <div class="social-intro" style="text-align: center; margin-bottom: 50px;">
+            <h2 class="centered-h2">Obserwuj nasze profile</h2>
+            <p style="color: #ccc; max-width: 700px; margin: 0 auto;">Dzielimy się efektami naszych prac blacharsko-lakierniczych oraz codziennym życiem warsztatu.</p>
+        </div>
 
-<a href="https://www.facebook.com/profile.php?id=100057295096815" target="_blank" class="big-social fb">
-<i class="fab fa-facebook-f"></i>
-<span>Facebook</span>
-</a>
-
-<a href="https://instagram.com/TWOJPROFIL" target="_blank" class="big-social ig">
-<i class="fab fa-instagram"></i>
-<span>Instagram</span>
-</a>
-
-<a href="https://tiktok.com/@TWOJPROFIL" target="_blank" class="big-social tt">
-<i class="fab fa-tiktok"></i>
-<span>TikTok</span>
-</a>
-
-</div>
+        <div class="social-big" style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+            <a href="https://www.facebook.com/profile.php?id=100057295096815" target="_blank" class="big-social fb" style="background: #1877f2; color: white; padding: 20px 40px; border-radius: 10px; text-decoration: none; display: flex; align-items: center; gap: 15px; font-weight: bold;">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+            <a href="https://www.instagram.com/cwspiekarski/" target="_blank" class="big-social ig" style="background: #e4405f; color: white; padding: 20px 40px; border-radius: 10px; text-decoration: none; display: flex; align-items: center; gap: 15px; font-weight: bold;">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://www.tiktok.com/@cwspiekarski?lang=pl-PL" target="_blank" class="big-social tt" style="background: #000; color: white; padding: 20px 40px; border-radius: 10px; text-decoration: none; display: flex; align-items: center; gap: 15px; font-weight: bold;">
+                <i class="fab fa-tiktok"></i> TikTok
+            </a>
+        </div>
+    </div>
 </section>
 
+<footer class="footer-main" style="padding: 60px 0; background-color: #0a1929; border-top: 1px solid rgba(255,255,255,0.1);">
+    <div class="container footer-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;">
+        <div class="footer-col">
+            <h3 style="color: #fff; margin-bottom: 20px;">CWS Piekarski</h3>
+            <p style="color: #ccc; line-height: 1.6;">Lider napraw powypadkowych w regionie Kozienic. Tradycja od 1972 roku.</p>
+        </div>
+        <div class="footer-col">
+            <h4 style="color: #fff; margin-bottom: 20px;">Menu</h4>
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 10px;"><a href="naprawy-powypadkowe.html" style="color: #ccc; text-decoration: none;">Naprawy</a></li>
+                <li style="margin-bottom: 10px;"><a href="mechanika.html" style="color: #ccc; text-decoration: none;">Mechanika</a></li>
+                <li><a href="kontakt.html" style="color: #ccc; text-decoration: none;">Kontakt</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4 style="color: #fff; margin-bottom: 20px;">Kontakt</h4>
+            <p style="color: #7ac943; font-weight: bold;">48 624 71 68</p>
+            <p style="color: #ccc;">bok@cwspiekarski.pl</p>
+        </div>
+    </div>
+    <div class="footer-bottom" style="text-align: center; margin-top: 40px; color: #666; font-size: 0.85rem;">
+        © 2026 CWS Piekarski – Wszystkie prawa zastrzeżone
+    </div>
+</footer>
 
+<div class="social-fixed">
+    <a href="https://www.facebook.com/profile.php?id=100057295096815" target="_blank" class="social fb" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/cwspiekarski/" target="_blank" class="social ig" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@cwspiekarski?lang=pl-PL" target="_blank" class="social tt" title="TikTok"><i class="fab fa-tiktok"></i></a>
+</div>
 
-<script async defer crossorigin="anonymous"
-src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v18.0">
-</script>
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous"
-src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v18.0">
-</script>
-<script async defer crossorigin="anonymous"
-src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v18.0">
-</script>
 </body>
 </html>
