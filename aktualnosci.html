@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aktualności | CWS Piekarski Kozienice</title>
+    <title>Aktualności i Realizacje | CWS Piekarski Kozienice</title>
+    <meta name="description" content="Zobacz najnowsze realizacje blacharsko-lakiernicze, serwis klimatyzacji oraz geometrię kół w CWS Piekarski Kozienice. Sprawdź, jak pracujemy!">
+    <meta name="keywords" content="aktualności CWS Piekarski, lakierowanie zderzaka Kozienice, geometria kół Kozienice, serwis klimatyzacji, SKP Kozienice zdjęcia, naprawy blacharskie nowych aut, wynajem przyczepek">
+    <link rel="canonical" href="https://cwspiekarski.pl/aktualnosci.html">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body style="background-color: #0a1929; color: #fff; margin: 0; font-family: sans-serif;">
 
 <style>
-    #FIXED_CALL_STEEL {
-        display: none !important;
-    }
+    #FIXED_CALL_STEEL { display: none !important; }
     @media (max-width: 992px) {
         #FIXED_CALL_STEEL {
             display: flex !important;
@@ -34,6 +35,41 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.6) !important;
         }
     }
+    .big-social-btn {
+        padding: 20px 50px !important;
+        font-size: 1.2rem !important;
+        border-radius: 12px !important;
+        transition: transform 0.3s ease;
+    }
+    .big-social-btn:hover {
+        transform: scale(1.05);
+    }
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 20px;
+        margin-top: 50px;
+    }
+    .gallery-item {
+        background: #0d1b2e;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid rgba(255,255,255,0.1);
+        display: flex;
+        flex-direction: column;
+    }
+    .gallery-item img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+    .gallery-item p {
+        padding: 15px;
+        font-size: 0.9rem;
+        color: #ccc;
+        line-height: 1.4;
+        margin: 0;
+    }
 </style>
 
 <a href="tel:+48486247168" id="FIXED_CALL_STEEL">
@@ -45,7 +81,7 @@
         <div class="logo">CWS Piekarski</div>
         <nav id="main-nav">
             <ul>
-                <li><a href="index.html" class="home-icon"><i class="fas fa-home"></i></a></li>
+                <li><a href="index.html" class="home-icon" aria-label="Strona główna"><i class="fas fa-home"></i></a></li>
                 <li><a href="naprawy-powypadkowe.html">Naprawy powypadkowe</a></li>
                 <li><a href="mechanika.html">Mechanika</a></li>
                 <li><a href="skp.html">SKP</a></li>
@@ -58,43 +94,84 @@
     </div>
 </header>
 
-<section class="section news-content" id="feed" style="padding-bottom: 120px;"> <div class="container">
+<section class="section news-content" style="padding: 80px 20px;"> 
+    <div class="container">
         <div class="social-intro" style="text-align: center; margin-bottom: 50px;">
-            <h2 class="centered-h2">Obserwuj nasze profile</h2>
-            <p style="color: #ccc; max-width: 700px; margin: 0 auto;">Dzielimy się efektami naszych prac blacharsko-lakierniczych oraz codziennym życiem warsztatu.</p>
+            <h1 style="font-size: 2.5rem; margin-bottom: 20px;">Aktualności i nasze realizacje</h1>
+            <h2 style="font-size: 1.2rem; color: #7ac943; margin-bottom: 20px;">Warsztat blacharsko-lakierniczy i mechanika – galeria prac z Kozienic</h2>
+            <p style="color: #ccc; max-width: 800px; margin: 0 auto; line-height: 1.6;">
+                Bądź na bieżąco z życiem naszego serwisu. Zapraszamy do śledzenia naszych profili społecznościowych, gdzie regularnie publikujemy nowe zdjęcia i filmy z realizacji.
+            </p>
         </div>
 
-        <div class="social-big" style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
-            <a href="https://www.facebook.com/profile.php?id=100057295096815" target="_blank" class="big-social fb" style="background: #1877f2; color: white; padding: 20px 40px; border-radius: 10px; text-decoration: none; display: flex; align-items: center; gap: 15px; font-weight: bold;">
-                <i class="fab fa-facebook-f"></i> Facebook
+        <div class="social-big" style="display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; margin-bottom: 60px;">
+            <a href="https://www.facebook.com/profile.php?id=100057295096815" target="_blank" class="big-social-btn fb" style="background: #1877f2; color: white; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 15px;">
+                <i class="fab fa-facebook-f" style="font-size: 1.5rem;"></i> Facebook
             </a>
-            <a href="https://www.instagram.com/cwspiekarski/" target="_blank" class="big-social ig" style="background: #e4405f; color: white; padding: 20px 40px; border-radius: 10px; text-decoration: none; display: flex; align-items: center; gap: 15px; font-weight: bold;">
-                <i class="fab fa-instagram"></i> Instagram
+            <a href="https://www.instagram.com/cwspiekarski/" target="_blank" class="big-social-btn ig" style="background: #e4405f; color: white; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 15px;">
+                <i class="fab fa-instagram" style="font-size: 1.5rem;"></i> Instagram
             </a>
-            <a href="https://www.tiktok.com/@cwspiekarski?lang=pl-PL" target="_blank" class="big-social tt" style="background: #000; color: white; padding: 20px 40px; border-radius: 10px; text-decoration: none; display: flex; align-items: center; gap: 15px; font-weight: bold;">
-                <i class="fab fa-tiktok"></i> TikTok
+            <a href="https://www.tiktok.com/@cwspiekarski?lang=pl-PL" target="_blank" class="big-social-btn tt" style="background: #000; color: white; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 15px;">
+                <i class="fab fa-tiktok" style="font-size: 1.5rem;"></i> TikTok
             </a>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 60px 0;">
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="assets/images//cws-piekarski-widok-budynku-serwis.jpg" alt="Centrum Napraw Samochodowych CWS Piekarski Kozienice widok z zewnątrz">
+                <p><strong>Nasz Zakład:</strong> Siedziba CWS Piekarski w Kozienicach (Brzeźnica 99) – zapraszamy do skorzystania z naszych usług.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images//lakierowanie-zderzaka-kozienice.jpg" alt="Lakierowanie zderzaka samochodowego Kozienice - CWS Piekarski">
+                <p><strong>Lakierowanie zderzaka:</strong> Precyzyjne usuwanie zarysowań i komputerowy dobór lakieru w naszej kabinie.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images//zaawansowane-naprawy-blacharskie-nowe-auta.jpg" alt="Zaawansowane naprawy blacharskie nowych aut Kozienice CWS Piekarski">
+                <p><strong>Trudne naprawy blacharskie:</strong> Wykorzystujemy najnowsze technologie i narzędzia do naprawy najnowocześniejszych konstrukcji aut.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images//hala-napraw-mechanicznych-kozienice.jpg" alt="Profesjonalna hala napraw mechanicznych CWS Piekarski Kozienice">
+                <p><strong>Hala napraw:</strong> Nasze stanowiska serwisowe wyposażone w nowoczesne podnośniki i narzędzia warsztatowe.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images//geometria-kol-zbieznosc-kozienice.jpg" alt="Ustawianie geometrii kół i zbieżności zawieszenia Kozienice">
+                <p><strong>Geometria kół:</strong> Profesjonalne ustawianie zbieżności zawieszenia gwarantujące bezpieczeństwo jazdy.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images//stacja-kontroli-pojazdow-wyposazenie.jpg" alt="Wnętrze stacji kontroli pojazdów CWS Piekarski Brzeźnica">
+                <p><strong>Stacja Kontroli Pojazdów:</strong> Nasza nowoczesna linia diagnostyczna pod patronatem DEKRA w pełnej gotowości.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images//serwis-klimatyzacji-samochodowej.jpg" alt="Serwis i nabijanie klimatyzacji samochodowej urządzenia diagnostyczne">
+                <p><strong>Serwis Klimatyzacji:</strong> Diagnostyka szczelności i nabijanie klimatyzacji najnowocześniejszymi urządzeniami.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images//wynajem-przyczepek-transportowych-kozienice.jpg" alt="Wynajem przyczepek transportowych Temared Kozienice CWS Piekarski">
+                <p><strong>Wynajem przyczepek:</strong> Oferujemy solidne przyczepki transportowe Temared – idealne do przewozu większych ładunków.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images//biuro-obslugi-klienta-poczekalnia-kawa.jpg" alt="Biuro obsługi klienta i poczekalnia z kawą CWS Piekarski">
+                <p><strong>Biuro i poczekalnia:</strong> Miejsce, w którym możesz wygodnie poczekać na zakończenie usługi i napić się świeżej kawy.</p>
+            </div>
         </div>
     </div>
 </section>
 
 <footer class="footer-main" style="padding: 60px 0; background-color: #0a1929;">
     <div class="container footer-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;">
-        
         <div class="footer-col">
             <h3 style="color: #fff; margin-bottom: 20px;">CWS Piekarski</h3>
             <p style="color: #ccc; line-height: 1.6; margin-bottom: 25px;">
-                Centrum Napraw Samochodowych w Kozienicach. 
-                Mechanika, naprawy powypadkowe, SKP, 
-                pomoc drogowa 24/7 oraz wynajem pojazdów.
+                Centrum Napraw Samochodowych w Kozienicach. Mechanika, naprawy powypadkowe, SKP, pomoc drogowa 24/7 oraz wynajem pojazdów.
             </p>
             <div class="social-icons" style="display: flex; gap: 20px;">
-                <a href="https://www.facebook.com/profile.php?id=100057295096815" target="_blank" style="color: #fff; font-size: 24px; text-decoration: none;"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/cwspiekarski/" target="_blank" style="color: #fff; font-size: 24px; text-decoration: none;"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.tiktok.com/@cwspiekarski?lang=pl-PL" target="_blank" style="color: #fff; font-size: 24px; text-decoration: none;"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100057295096815" target="_blank" style="color: #fff; font-size: 24px;"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/cwspiekarski/" target="_blank" style="color: #fff; font-size: 24px;"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@cwspiekarski?lang=pl-PL" target="_blank" style="color: #fff; font-size: 24px;"><i class="fab fa-tiktok"></i></a>
             </div>
         </div>
-
         <div class="footer-col">
             <h4 style="color: #fff; margin-bottom: 20px;">Szybkie linki</h4>
             <ul style="list-style: none; padding: 0;">
@@ -107,39 +184,18 @@
                 <li style="margin-bottom: 12px;"><a href="kontakt.html" style="color: #ccc; text-decoration: none;">Kontakt</a></li>
             </ul>
         </div>
-
         <div class="footer-col">
             <h4 style="color: #fff; margin-bottom: 20px;">Kontakt</h4>
-            <p style="color: #ccc; margin-bottom: 15px; line-height: 1.6;">
-                26-900 Kozienice<br>
-                Brzeźnica 99
-            </p>
-            <p style="color: #ccc; margin-bottom: 15px; line-height: 1.6;">
-                Tel: 48 624 71 68<br>
-                48 624 72 71
-            </p>
-            <p style="color: #ccc; margin-bottom: 15px;">
-                Pomoc drogowa 24h:<br>
-                <span style="color: #4caf50; font-weight: bold;">602 616 999</span>
-            </p>
-            <p style="color: #ccc;">
-                E-mail:<br>
-                <a href="mailto:bok@cwspiekarski.pl" style="color: #4caf50; text-decoration: none; font-weight: 500;">bok@cwspiekarski.pl</a>
-            </p>
+            <p style="color: #ccc; margin-bottom: 15px;">26-900 Kozienice, Brzeźnica 99</p>
+            <p style="color: #ccc; margin-bottom: 15px;">Tel: 48 624 71 68<br>48 624 72 71</p>
+            <p style="color: #ccc; margin-bottom: 15px;">Pomoc drogowa 24h: <span style="color: #4caf50; font-weight: bold;">602 616 999</span></p>
+            <p style="color: #ccc;">E-mail: <a href="mailto:bok@cwspiekarski.pl" style="color: #4caf50; text-decoration: none;">bok@cwspiekarski.pl</a></p>
         </div>
-
     </div>
-
     <div class="footer-bottom" style="text-align: center; margin-top: 50px; padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.1); color: #888; font-size: 0.85rem;">
         © 2026 CWS Piekarski – Wszystkie prawa zastrzeżone
     </div>
 </footer>
-
-<div class="social-fixed">
-    <a href="https://www.facebook.com/profile.php?id=100057295096815" target="_blank" class="social fb" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-    <a href="https://www.instagram.com/cwspiekarski/" target="_blank" class="social ig" title="Instagram"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.tiktok.com/@cwspiekarski?lang=pl-PL" target="_blank" class="social tt" title="TikTok"><i class="fab fa-tiktok"></i></a>
-</div>
 
 </body>
 </html>

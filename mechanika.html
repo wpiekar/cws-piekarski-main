@@ -2,9 +2,16 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Mechanika pojazdowa – CWS Piekarski</title>
+    <title>Warsztat Samochodowy Kozienice | Mechanik CWS Piekarski | Castrol Service</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Autoryzowana mechanika samochodowa Castrol Q Service. Serwis, naprawy, geometria, klimatyzacja, opony – Kozienice i region.">
+    <meta name="description" content="Profesjonalny warsztat samochodowy w Kozienicach. Autoryzowany serwis Castrol Q Service: mechanika pojazdowa, diagnostyka komputerowa, klimatyzacja, geometria kół i opony.">
+    <meta name="keywords" content="mechanik Kozienice, warsztat samochodowy Kozienice, serwis klimatyzacji Kozienice, diagnostyka komputerowa, wymiana oleju, naprawa zawieszenia Kozienice">
+    <link rel="canonical" href="https://cwspiekarski.pl/mechanika.html">
+    
+    <meta property="og:title" content="CWS Piekarski - Profesjonalna Mechanika Pojazdowa Kozienice">
+    <meta property="og:description" content="Kompleksowy serwis aut osobowych i dostawczych. Autoryzacja Castrol Q Service. Sprawdź naszą ofertę!">
+    <meta property="og:type" content="website">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -13,9 +20,9 @@
 <header>
     <div class="container nav">
         <div class="logo">CWS Piekarski</div>
-        <nav>
+        <nav id="main-nav">
             <ul>
-                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="index.html" aria-label="Strona główna">Strona główna</a></li>
                 <li><a href="naprawy-powypadkowe.html">Naprawy powypadkowe</a></li>
                 <li><a href="mechanika.html" class="active">Mechanika</a></li>
                 <li><a href="skp.html">SKP</a></li>
@@ -24,144 +31,126 @@
                 <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
-        <a class="phone-btn" href="tel:+48486247168">☎ 48 624 71 68</a>
+        <a class="phone-btn" href="tel:+48486247168" title="Zadzwoń do serwisu">☎ 48 624 71 68</a>
     </div>
 </header>
 
-<section class="hero">
-    <div class="container">
-        <h1>Mechanika pojazdowa – serwis i naprawy w jednym miejscu</h1>
-        <p>
-            Autoryzowany warsztat Castrol Q Service. 
-            Działamy nieprzerwanie od 2000 roku.
-        </p>
-        <p>
-            Zapewniamy kompleksowy serwis samochodów osobowych i dostawczych – 
-            od przeglądów okresowych i wymiany oleju po naprawy zawieszenia, 
-            hamulców oraz układów napędowych.
-        </p>
+<main>
+    <section class="hero">
+        <div class="container">
+            <h1>Mechanika pojazdowa Kozienice – Profesjonalny serwis i naprawy</h1>
+            <p>
+                <strong>Autoryzowany warsztat Castrol Q Service.</strong> 
+                Działamy nieprzerwanie od 2000 roku, dbając o bezpieczeństwo kierowców w regionie.
+            </p>
+            <p>
+                Zapewniamy kompleksowy serwis samochodów osobowych i dostawczych – 
+                od przeglądów okresowych i wymiany oleju po zaawansowane naprawy zawieszenia, 
+                hamulców oraz diagnostykę silników.
+            </p>
 
-        <a href="cennik.html" class="btn-primary">Cennik</a>
-    </div>
-</section>
+            <a href="kontakt.html" class="btn-primary">Umów wizytę</a>
+        </div>
+    </section>
 
-<section class="section">
-    <div class="container">
-        <h2 class="centered-h2 scroll-reveal">Zakres usług</h2>
+    <section class="section">
+        <div class="container">
+            <h2 class="centered-h2 scroll-reveal">Zakres usług serwisowych</h2>
 
-        <div class="cards" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
-            <div class="card">
-                <h3>Serwis eksploatacyjny</h3>
-                <p>Przeglądy okresowe, wymiana oleju i filtrów, wymiana rozrządu.</p>
-            </div>
-            <div class="card">
-                <h3>Układ hamulcowy i zawieszenie</h3>
-                <p>Naprawy zawieszenia, układu kierowniczego oraz serwis hamulców.</p>
-            </div>
-            <div class="card">
-                <h3>Diagnostyka komputerowa</h3>
-                <p>Precyzyjna diagnostyka usterek i kontrola parametrów pracy pojazdu.</p>
-            </div>
-            <div class="card">
-                <h3>Serwis klimatyzacji</h3>
-                <p>Napełnianie, odgrzybianie i kontrola szczelności układu.</p>
-            </div>
-            <div class="card">
-                <h3>Serwis oponiarski</h3>
-                <p>Wymiana, wyważanie oraz sezonowa obsługa opon.</p>
-            </div>
-            <div class="card">
-                <h3>Geometria i podwozie</h3>
-                <p>Ustawianie geometrii kół oraz konserwacja podwozia.</p>
+            <div class="services-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+                <article class="card">
+                    <h3>Serwis eksploatacyjny</h3>
+                    <p>Przeglądy okresowe, profesjonalna wymiana oleju Castrol, filtrów oraz wymiana rozrządu.</p>
+                </article>
+                <article class="card">
+                    <h3>Hamulce i zawieszenie</h3>
+                    <p>Naprawy zawieszenia, układu kierowniczego oraz serwis hamulców (wymiana tarcz i klocków).</p>
+                </article>
+                <article class="card">
+                    <h3>Diagnostyka komputerowa</h3>
+                    <p>Precyzyjne odczytywanie błędów, diagnostyka silnika i kasowanie inspekcji serwisowych.</p>
+                </article>
+                <article class="card">
+                    <h3>Serwis klimatyzacji</h3>
+                    <p>Napełnianie (czynnik R134a/YF), odgrzybianie ozonowe i kontrola szczelności układu.</p>
+                </article>
+                <article class="card">
+                    <h3>Serwis opon (Wulkanizacja)</h3>
+                    <p>Wymiana opon, wyważanie kół oraz sprzedaż ogumienia renomowanych marek.</p>
+                </article>
+                <article class="card">
+                    <h3>Geometria kół 3D</h3>
+                    <p>Precyzyjne ustawianie geometrii kół, poprawiające prowadzenie i ograniczające zużycie opon.</p>
+                </article>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="section">
-    <div class="container">
-        <h2 class="centered-h2 scroll-reveal">Najczęstsze usterki które naprawiamy</h2>
+    <section class="section">
+        <div class="container">
+            <h2 class="centered-h2 scroll-reveal">Najczęstsze usterki – Naprawimy Twój samochód</h2>
 
-        <div class="cards" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
-            <div class="card">
-                <h3>Stuki w zawieszeniu</h3>
-                <p>Niepokojące stuki podczas jazdy po nierównościach mogą oznaczać zużyte łączniki stabilizatora, tuleje lub elementy zawieszenia.</p>
-            </div>
-            <div class="card">
-                <h3>Kontrolka check engine</h3>
-                <p>Zapalenie się kontrolki silnika może oznaczać różne problemy. Wykonujemy diagnostykę komputerową i szybko ustalamy przyczynę.</p>
-            </div>
-            <div class="card">
-                <h3>Problemy z hamulcami</h3>
-                <p>Piszczenie, wibracje lub słabsze hamowanie to sygnał, że układ hamulcowy wymaga kontroli lub wymiany elementów.</p>
-            </div>
-            <div class="card">
-                <h3>Brak mocy silnika</h3>
-                <p>Spadek mocy może wynikać z problemów z układem paliwowym, turbiną, przepływomierzem lub zapłonem.</p>
-            </div>
-            <div class="card">
-                <h3>Problemy z klimatyzacją</h3>
-                <p>Słabe chłodzenie lub nieprzyjemny zapach z nawiewów często oznacza konieczność serwisu klimatyzacji.</p>
-            </div>
-            <div class="card">
-                <h3>Wycieki oleju</h3>
-                <p>Plamy pod samochodem lub spadek poziomu oleju mogą oznaczać nieszczelności wymagające szybkiej naprawy.</p>
+            <div class="cards" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+                <div class="card">
+                    <h3>Stuki w zawieszeniu</h3>
+                    <p>Eliminujemy luzy w układzie kierowniczym i zawieszeniu, przywracając komfort jazdy.</p>
+                </div>
+                <div class="card">
+                    <h3>Kontrolka check engine</h3>
+                    <p>Szybko diagnozujemy przyczynę zapalenia się kontrolki silnika za pomocą nowoczesnych testerów.</p>
+                </div>
+                <div class="card">
+                    <h3>Problemy z hamulcami</h3>
+                    <p>Usuwamy piszczenie, wibracje na kierownicy oraz poprawiamy siłę hamowania pojazdu.</p>
+                </div>
+                <div class="card">
+                    <h3>Spadek mocy silnika</h3>
+                    <p>Naprawiamy turbosprężarki, układy wtryskowe i systemy dolotowe (EGR, DPF).</p>
+                </div>
+                <div class="card">
+                    <h3>Serwis klimatyzacji</h3>
+                    <p>Przywracamy pełną wydajność chłodzenia i eliminujemy nieprzyjemne zapachy z nawiewu.</p>
+                </div>
+                <div class="card">
+                    <h3>Wycieki płynów</h3>
+                    <p>Lokalizujemy i uszczelniamy wycieki oleju silnikowego, płynu chłodniczego oraz wspomagania.</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="section section-dark">
-    <div class="container">
-        <h2 class="centered-h2 scroll-reveal">Autoryzowany Castrol Q Service</h2>
-        <p style="max-width:900px;margin:30px auto;text-align:center;line-height:1.8;">
-            Jesteśmy autoryzowanym warsztatem Castrol Q Service – międzynarodowej sieci 
-            niezależnych warsztatów spełniających wysokie standardy jakości.
-            Pracujemy na olejach i środkach smarnych marki Castrol,
-            zapewniając optymalną ochronę silnika i układów mechanicznych.
-        </p>
-        <p style="text-align:center;font-weight:600;">
-            Standard jakości • Doświadczenie • Profesjonalne zaplecze
-        </p>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
-        <h2 class="centered-h2 scroll-reveal">Gwarancja i bezpieczeństwo</h2>
-        <p style="max-width:900px;margin:30px auto;text-align:center;line-height:1.8;">
-            Na wykonane usługi oraz zastosowane części udzielamy gwarancji.
-            Każdą naprawę poprzedzamy rzetelną diagnostyką oraz informacją o kosztach.
-        </p>
-        <p style="text-align:center;">
-            Mechanika funkcjonuje nieprzerwanie od 2000 roku.
-        </p>
-    </div>
-</section>
+    <section class="section section-dark">
+        <div class="container">
+            <h2 class="centered-h2 scroll-reveal">Autoryzowany partner Castrol Q Service</h2>
+            <p style="max-width:900px;margin:30px auto;text-align:center;line-height:1.8;color:#ccc;">
+                Jesteśmy częścią międzynarodowej sieci <strong>Castrol Q Service</strong>. 
+                Dla naszych klientów oznacza to gwarancję najwyższych standardów obsługi oraz pewność, 
+                że pracujemy wyłącznie na sprawdzonych olejach i płynach eksploatacyjnych marki Castrol.
+            </p>
+            <p style="text-align:center;font-weight:600;color:#fff;">
+                Gwarancja jakości • Wykwalifikowani mechanicy • Nowoczesny warsztat
+            </p>
+        </div>
+    </section>
+</main>
 
 <section class="cta-dark" style="padding: 80px 0; text-align: center; background: radial-gradient(circle, rgba(46,125,50,0.15) 0%, rgba(10,25,41,1) 70%);">
     <div class="container">
-        <h2 class="centered-h2 scroll-reveal">Umów wizytę w serwisie</h2>
-        
+        <h2 class="centered-h2 scroll-reveal">Umów się na serwis w Kozienicach</h2>
         <div style="margin-top: 40px; position: relative; display: inline-block;">
-            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 120%; height: 120%; background: var(--primary-green); filter: blur(60px); opacity: 0.1; z-index: 0;"></div>
-            
             <div style="position: relative; z-index: 1;">
-                <p style="font-size: 1.2rem; color: #ccc; margin-bottom: 15px;">Twój samochód wymaga przeglądu lub naprawy?</p>
-                
+                <p style="font-size: 1.2rem; color: #ccc; margin-bottom: 15px;">Zadzwoń i ustal dogodny termin wizyty:</p>
                 <p class="assist" style="font-size: 48px; font-weight: bold; margin: 20px 0;">
                     <a href="tel:+48486247168" style="color: #fff; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 15px;">
-                        <span style="color: var(--primary-green);">☎</span> 48 624 71 68
+                        <span style="color: #7ac943;">☎</span> 48 624 71 68
                     </a>
                 </p>
-                
                 <p style="font-size: 1.1rem; margin-bottom: 10px;">
-                    <a href="mailto:bok@cwspiekarski.pl" style="color: var(--primary-green); text-decoration: none; border-bottom: 1px dashed var(--primary-green);">
+                    <a href="mailto:bok@cwspiekarski.pl" style="color: #7ac943; text-decoration: none; border-bottom: 1px dashed #7ac943;">
                         bok@cwspiekarski.pl
                     </a>
                 </p>
-                
-                <p style="color: #888; font-style: italic;">Działamy nieprzerwanie od 2000 roku.</p>
+                <p style="color: #888; font-style: italic;">Obsługujemy samochody wszystkich marek.</p>
             </div>
         </div>
     </div>
@@ -169,7 +158,6 @@
 
 <footer class="footer-main" style="padding: 60px 0; background-color: #0a1929;">
     <div class="container footer-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;">
-        
         <div class="footer-col">
             <h3 style="color: #fff; margin-bottom: 20px;">CWS Piekarski</h3>
             <p style="color: #ccc; line-height: 1.6; margin-bottom: 25px;">
@@ -178,12 +166,11 @@
                 pomoc drogowa 24/7 oraz wynajem pojazdów.
             </p>
             <div class="social-icons" style="display: flex; gap: 20px;">
-                <a href="#" target="_blank" style="color: #fff; font-size: 24px; text-decoration: none;"><i class="fab fa-facebook"></i></a>
-                <a href="#" target="_blank" style="color: #fff; font-size: 24px; text-decoration: none;"><i class="fab fa-instagram"></i></a>
-                <a href="#" target="_blank" style="color: #fff; font-size: 24px; text-decoration: none;"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100057295096815" target="_blank" style="color: #fff; font-size: 24px; text-decoration: none;" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/cwspiekarski/" target="_blank" style="color: #fff; font-size: 24px; text-decoration: none;" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@cwspiekarski?lang=pl-PL" target="_blank" style="color: #fff; font-size: 24px; text-decoration: none;" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
             </div>
         </div>
-
         <div class="footer-col">
             <h4 style="color: #fff; margin-bottom: 20px;">Szybkie linki</h4>
             <ul style="list-style: none; padding: 0;">
@@ -195,33 +182,30 @@
                 <li style="margin-bottom: 12px;"><a href="kontakt.html" style="color: #ccc; text-decoration: none;">Kontakt</a></li>
             </ul>
         </div>
-
         <div class="footer-col">
             <h4 style="color: #fff; margin-bottom: 20px;">Kontakt</h4>
             <p style="color: #ccc; margin-bottom: 15px; line-height: 1.6;">
-                26-900 Kozienice<br>
-                Brzeźnica 99
+                26-900 Kozienice, Brzeźnica 99
             </p>
             <p style="color: #ccc; margin-bottom: 15px; line-height: 1.6;">
                 Tel: 48 624 71 68<br>
-                48 624 72 71
+                SKP: 48 624 72 71
             </p>
             <p style="color: #ccc; margin-bottom: 15px;">
-                Pomoc drogowa 24h:<br>
-                <span style="color: #4caf50; font-weight: bold;">602 616 999</span>
-            </p>
-            <p style="color: #ccc;">
-                E-mail:<br>
-                <a href="mailto:bok@cwspiekarski.pl" style="color: #4caf50; text-decoration: none; font-weight: 500;">bok@cwspiekarski.pl</a>
+                Pomoc drogowa 24h: <span style="color: #4caf50; font-weight: bold;">602 616 999</span>
             </p>
         </div>
-
     </div>
-
     <div class="footer-bottom" style="text-align: center; margin-top: 50px; padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.1); color: #888; font-size: 0.85rem;">
         © 2026 CWS Piekarski – Wszystkie prawa zastrzeżone
     </div>
 </footer>
+
+<div class="social-fixed">
+    <a href="https://www.facebook.com/profile.php?id=100057295096815" target="_blank" class="social fb" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/cwspiekarski/" target="_blank" class="social ig" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@cwspiekarski?lang=pl-PL" target="_blank" class="social tt" title="TikTok"><i class="fab fa-tiktok"></i></a>
+</div>
 
 <script>
     const observer = new IntersectionObserver((entries) => {
@@ -231,10 +215,6 @@
     }, { threshold: 0.1 });
     document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
 </script>
-<div class="social-fixed">
-    <a href="URL_FACEBOOK" target="_blank" class="social fb" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-    <a href="URL_INSTAGRAM" target="_blank" class="social ig" title="Instagram"><i class="fab fa-instagram"></i></a>
-    <a href="URL_TIKTOK" target="_blank" class="social tt" title="TikTok"><i class="fab fa-tiktok"></i></a>
-</div>
+
 </body>
 </html>

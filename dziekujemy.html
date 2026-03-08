@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dziękujemy za zgłoszenie | CWS Piekarski</title>
+    <title>Dziękujemy za kontakt | CWS Piekarski Kozienice</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://cwspiekarski.pl/dziekujemy.html">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
@@ -19,9 +22,9 @@
 <header>
     <div class="container nav">
         <div class="logo">CWS Piekarski</div>
-        <nav>
+        <nav id="main-nav">
             <ul>
-                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="index.html" aria-label="Strona główna">Strona główna</a></li>
                 <li><a href="naprawy-powypadkowe.html">Naprawy powypadkowe</a></li>
                 <li><a href="mechanika.html">Mechanika</a></li>
                 <li><a href="skp.html">SKP</a></li>
@@ -37,12 +40,12 @@
 
 <section class="hero">
     <div class="container">
-        
-        <div id="hero-content" style="padding: 60px 0; text-align: center;">
+        <div id="hero-content" style="padding: 100px 0; text-align: center;">
+            <i class="fas fa-check-circle" style="font-size: 4rem; color: #7ac943; margin-bottom: 20px;"></i>
             <h1>Dziękujemy za zgłoszenie</h1>
-            <p>Skontaktujemy się z Tobą najszybciej jak to możliwe.</p>
-            <div style="margin-top: 30px;">
-                <a href="index.html" class="phone-btn" style="text-decoration: none; display: inline-block;">Powrót na stronę główną</a>
+            <p style="font-size: 1.2rem; color: #ccc;">Twoja wiadomość została wysłana. Skontaktujemy się z Tobą najszybciej jak to możliwe.</p>
+            <div style="margin-top: 40px;">
+                <a href="index.html" class="phone-btn" style="text-decoration: none; display: inline-block;">Powrót do strony głównej</a>
             </div>
         </div>
     </div>
@@ -59,22 +62,22 @@
                 pomoc drogowa 24/7 oraz wynajem pojazdów.
             </p>
             <div class="social-icons" style="display: flex; gap: 20px;">
-                <a href="https://www.facebook.com/profile.php?id=100057295096815" target="_blank" style="color: #fff; font-size: 24px; text-decoration: none;"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/cwspiekarski/" target="_blank" style="color: #fff; font-size: 24px; text-decoration: none;"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.tiktok.com/@cwspiekarski?lang=pl-PL" target="_blank" style="color: #fff; font-size: 24px; text-decoration: none;"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100057295096815" target="_blank" style="color: #fff; font-size: 24px; text-decoration: none;" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/cwspiekarski/" target="_blank" style="color: #fff; font-size: 24px; text-decoration: none;" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@cwspiekarski?lang=pl-PL" target="_blank" style="color: #fff; font-size: 24px; text-decoration: none;" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
             </div>
         </div>
 
         <div class="footer-col">
             <h4 style="color: #fff; margin-bottom: 20px;">Szybkie linki</h4>
             <ul style="list-style: none; padding: 0;">
-                <li style="margin-bottom: 12px;"><a href="naprawy-powypadkowe.html" style="color: #ccc; text-decoration: none;">Naprawy powypadkowe</a></li>
-                <li style="margin-bottom: 12px;"><a href="mechanika.html" style="color: #ccc; text-decoration: none;">Mechanika</a></li>
-                <li style="margin-bottom: 12px;"><a href="skp.html" style="color: #ccc; text-decoration: none;">SKP</a></li>
-                <li style="margin-bottom: 12px;"><a href="holowanie.html" style="color: #ccc; text-decoration: none;">Holowanie 24/7</a></li>
-                <li style="margin-bottom: 12px;"><a href="wynajem.html" style="color: #ccc; text-decoration: none;">Wynajem</a></li>
-                <li style="margin-bottom: 12px;"><a href="aktualnosci.html" style="color: #ccc; text-decoration: none;">Aktualności</a></li>
-                <li style="margin-bottom: 12px;"><a href="kontakt.html" style="color: #ccc; text-decoration: none;">Kontakt</a></li>
+                <li><a href="naprawy-powypadkowe.html" style="color: #ccc; text-decoration: none;">Naprawy powypadkowe</a></li>
+                <li><a href="mechanika.html" style="color: #ccc; text-decoration: none;">Mechanika</a></li>
+                <li><a href="skp.html" style="color: #ccc; text-decoration: none;">SKP</a></li>
+                <li><a href="holowanie.html" style="color: #ccc; text-decoration: none;">Holowanie 24/7</a></li>
+                <li><a href="wynajem.html" style="color: #ccc; text-decoration: none;">Wynajem</a></li>
+                <li><a href="aktualnosci.html" style="color: #ccc; text-decoration: none;">Aktualności</a></li>
+                <li><a href="kontakt.html" style="color: #ccc; text-decoration: none;">Kontakt</a></li>
             </ul>
         </div>
 
@@ -106,9 +109,9 @@
 </footer>
 
 <div class="social-fixed">
-    <a href="https://facebook.com" class="social fb"><i class="fab fa-facebook-f"></i></a>
-    <a href="https://instagram.com" class="social ig"><i class="fab fa-instagram"></i></a>
-    <a href="https://tiktok.com" class="social tt"><i class="fab fa-tiktok"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100057295096815" target="_blank" class="social fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/cwspiekarski/" target="_blank" class="social ig" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@cwspiekarski?lang=pl-PL" target="_blank" class="social tt" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
 </div>
 
 <script>
